@@ -70,19 +70,19 @@ Please follow these simple steps to install the WordPress extension on your serv
 * Upload your 360 views via ftp to your web server and note the location of xml configuration file(s) in the uploaded folder(s) as you will need it for the shortcodes as shown below.
 * Simply add the following line inside your post or page where you would like to see the 360 view embedded, substituting name, width, height and config with your own values.
 
-**Example 1:** '[wr360embed name="yourviewname" width="100%" height="450px" config="/wordpress/360-assets/sampleshoe/config.xml"]'
+**Example 1:** [wr360embed name="yourviewname" width="100%" height="450px" config="/wordpress/360-assets/sampleshoe/config.xml"]
 
 <h4>Integrate via popup</h4>
 Use the following shortcode to integrate via lightbox popup (replace name, width, height and config with your own values):
 
-**Example 2:** '[wr360popup name="yourviewname" width="620" height="450" config="/wordpress/360-assets/sampleshoe2/config.xml"]your thumbnail image or text[/wr360popup]'
+**Example 2:** [wr360popup name="yourviewname" width="620" height="450" config="/wordpress/360-assets/sampleshoe2/config.xml"]your thumbnail image or text[/wr360popup]
 
 <h4>Popup gallery</h4>
 If you need to show a gallery of your 360 views via a popup, add multiple wr360popup shortcodes for each of your 360 views with an extra parameter called gallery:
 
-'[wr360popup name="yourviewname1" gallery="true" width="620" height="450" config="/wordpress/360-assets/sampleshoe2/config.xml"]your thumbnail image or text[/wr360popup]'
+[wr360popup name="yourviewname1" gallery="true" width="620" height="450" config="/wordpress/360-assets/sampleshoe2/config.xml"]your thumbnail image or text[/wr360popup]
 
-'[wr360popup name="yourviewname2" gallery="true" width="400" height="400" config="/wordpress/360-assets/sampleshoe3/config.xml"]your thumbnail image or text[/wr360popup]'
+[wr360popup name="yourviewname2" gallery="true" width="400" height="400" config="/wordpress/360-assets/sampleshoe3/config.xml"]your thumbnail image or text[/wr360popup]
 
 
 == Uninstall ==
