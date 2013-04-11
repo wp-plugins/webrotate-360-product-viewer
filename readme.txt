@@ -18,7 +18,7 @@ WebRotate 360 Product Viewer for WordPress is a free plugin that can be used to 
 
 
 <h4>Features</h4>
-This product was built by us from grounds up in-house in Pasadena, California, USA. Unlike other software on the Web, our technology utilizes our own extensive experience producing professional 360 product photography and 3D models.
+This product was built by us from grounds up in-house in Pasadena, California. Unlike other software on the Web, our technology utilizes our own extensive experience producing professional 360 product photography and 3D models.
 
 * Designed by professional 360 photography studio.
 * Lightweight and fast with quick integration.
@@ -32,12 +32,12 @@ This product was built by us from grounds up in-house in Pasadena, California, U
 * No server side scripts required - all client / browser based.
 
 <h4>Upgrade to PRO</h4>
-Please support our work by going PRO that adds the following features:
+Support our work by going PRO that adds the following features:
 
-* Full-screen support (PRO version).
-* Ability to load 360-degree images from CDN (external server) or using a master configuration XML across multiple products (PRO version).
+* Full-screen support.
+* Ability to load 360-degree images from CDN (external server) or using a master configuration XML across multiple products.
 * Multiple embed shortcodes on the same page.
-* More PRO-only capabilities are coming in the next release.
+* More PRO capabilities are coming in the next release.
 * Free support and upgrades.
 
 <h4>How to create 360 views</h4>
@@ -47,7 +47,7 @@ If you haven't created 360 views with WebRotate 360 Product Viewer before, you w
 * <a href="http://youtu.be/8XQi7_YfTdA" target="_blank">Youtube tutorial</a>
 
 <h4>Support</h4>
-Check out the Installation tab for the installation instructions. For more information and your questions, please visit our <a href="http://www.360-product-views.com/forum/">product forum</a> or email us at support at webrotate360 dot com. We're located in Pasadena, California (Pacific Standard Time).
+Check out the Installation tab for the installation instructions. For more information and your questions, please visit our <a href="http://www.360-product-views.com/forum/">product forum</a> or email us at support at webrotate360 dot com. 
 
 == Installation ==
 
