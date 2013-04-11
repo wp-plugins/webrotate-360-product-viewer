@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: WebRotate 360 Product Viewer for WordPress
-Plugin URI: http://www.360-product-views.com/wordpress/
+Plugin URI: http://www.webrotate360.com/360-product-viewer.html
 Description: WebRotate 360 Product Viewer WordPress Integration
 Version: 2.0
 Author: WebRotate 360 LLC
