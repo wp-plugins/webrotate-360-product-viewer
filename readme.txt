@@ -14,7 +14,7 @@ Embed 360 product views and 360-degree panoramic views created with WebRotate 36
 
 WebRotate 360 Product Viewer for WordPress is a free plugin that can be used to integrate advanced 360 product views and 360-degree panoramic views created with WebRotate 360 Product Viewer. To see a demonstration of this plugin, please visit our demo page:
 
-<a href="http://www.360-product-views.com/wordpress/">DEMO</a>
+<a href="http://www.360-product-views.com/wordpress/">DEMO</a><br>
 <a href="http://www.webrotate360.com/360-product-viewer.html">WebRotate 360 Product Viewer</a>
 
 <h4>Main plugin features include:</h4>
@@ -37,7 +37,7 @@ WebRotate 360 Product Viewer for WordPress is a free plugin that can be used to 
 == Installation ==
 
 <h4>Please follow these steps to install the extension:</h4>
-
+<br>
 * Install WebRotate 360 Product Viewer for WordPress by either installing directly from your WordPress Admin area or download the module manually and copy unzipped webrotate360 folder into your wp-content/plugins.
 * Activate the module via the Plugins page in your WordPress Admin.
 * Upload your 360 views via ftp to your web server and note the location of xml configuration file(s) in the uploaded folder(s) as you will need it for the shortcodes as shown below.
@@ -60,7 +60,7 @@ If you need to show a gallery of your 360 views via a popup, add multiple wr360p
 
 If you haven't created 360 views with WebRotate 360 Product Viewer before, you will need to download our free software and follow this simple YouTube video below to create your 360 views first and then just upload them to your WordPress installation via FTP:
 
-<a href="http://www.webrotate360.com/360-product-viewer.html">Download software</a>
+<a href="http://www.webrotate360.com/360-product-viewer.html">Download software</a><br>
 <a href="http://youtu.be/8XQi7_YfTdA">Youtube tutorial</a>
 
 == Uninstall ==
