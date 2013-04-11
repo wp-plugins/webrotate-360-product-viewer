@@ -65,7 +65,7 @@ Please follow these simple steps to install the WordPress extension on your serv
 
 [wr360popup name="yourviewname" width="620" height="450" config="/wordpress/360-assets/sampleshoe2/config.xml"]your thumbnail image or text[/wr360popup]
 
-If you need to show a gallery of your 360 views via a popup, add multiple wr360popup shortcodes for each of your 360 views with an extra parameter called gallery:
+* If you need to show a gallery of your 360 views via a popup, add multiple wr360popup shortcodes for each of your 360 views with an extra parameter called gallery:
 
 [wr360popup name="yourviewname1" gallery="true" width="620" height="450" config="/wordpress/360-assets/sampleshoe2/config.xml"]your thumbnail image or text[/wr360popup]
 
