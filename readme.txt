@@ -37,7 +37,7 @@ WebRotate 360 Product Viewer for WordPress is a free plugin that can be used to 
 == Installation ==
 
 <h4>Please follow these steps to install the extension:</h4>
-<br>
+
 * Install WebRotate 360 Product Viewer for WordPress by either installing directly from your WordPress Admin area or download the module manually and copy unzipped webrotate360 folder into your wp-content/plugins.
 * Activate the module via the Plugins page in your WordPress Admin.
 * Upload your 360 views via ftp to your web server and note the location of xml configuration file(s) in the uploaded folder(s) as you will need it for the shortcodes as shown below.
