@@ -18,7 +18,6 @@ WebRotate 360 Product Viewer for WordPress is a free plugin that can be used to 
 <a href="http://www.webrotate360.com/360-product-viewer.html">WebRotate 360 Product Viewer</a>
 
 <h4>Main plugin features include:</h4>
-
 * Designed by professional 360 photography studio.
 * Lightweight and fast with quick integration.
 * Host images on your servers - no fees or vendor lock-in.
@@ -30,14 +29,13 @@ WebRotate 360 Product Viewer for WordPress is a free plugin that can be used to 
 * All configuration is done via a separate XML file.
 * Free desktop software for quick configuration and publishing of your 360 views is available.
 * No server side scripts required - all client / browser based.
-* Ability to load 360-degree images from CDN (external server) or using a master configuration XML across all products (PRO version).
+* Ability to load 360-degree images from CDN (external server) or using a master configuration XML across multiple products (PRO version).
 
 
 
 == Installation ==
 
 <h4>Please follow these steps to install the extension:</h4>
-
 * Install WebRotate 360 Product Viewer for WordPress by either installing directly from your WordPress Admin area or download the module manually and copy unzipped webrotate360 folder into your wp-content/plugins.
 * Activate the module via the Plugins page in your WordPress Admin.
 * Upload your 360 views via ftp to your web server and note the location of xml configuration file(s) in the uploaded folder(s) as you will need it for the shortcodes as shown below.
