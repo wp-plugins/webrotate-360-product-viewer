@@ -1,0 +1,365 @@
+.wr360_player
+{
+     width:100%;
+     height:100%;
+     background: #fff;
+     -webkit-user-select:none;
+     -khtml-user-select:none;
+     -moz-user-select:none;
+     -o-user-select:none;
+     user-select:none;
+}
+
+.wr360_player .container
+{
+     position:relative;
+     overflow:hidden;
+     margin:0 !important;
+}
+
+.wr360_player img
+{
+    max-width:none !important;
+    max-height:none !important;
+    border:none !important;
+    box-shadow:none !important;
+}
+
+.wr360_player .container .panning2,
+.wr360_player .container .panning
+{
+     position:absolute;
+     left:0;
+     top:0;
+}
+
+.wr360_player .container .theme_panel_back
+{
+     position:absolute;
+     width:100%;
+     bottom:0;
+     left:0;
+     margin-bottom:0px;
+     height:28px;
+     z-index: 2500;
+}
+
+.wr360_player .container .theme_panel
+{
+     position:absolute;
+     width:100%;
+     bottom:0;
+     left:0;
+     margin-bottom:0px;
+     height:28px;
+     z-index: 2501;
+}
+
+.wr360_player .container .theme_header
+{
+     height: 20px;
+     z-index: 2500;
+}
+
+.wr360_player .container .theme_header .progress_bar
+{
+     background:url(../img/basic/load_js.gif) left top no-repeat;
+     margin:1px 0 0 6px;
+     float:left;
+     width:43px;
+     height:8px;
+     cursor:pointer;
+}
+
+.wr360_player .container .theme_header .progress_num
+{
+     position:absolute;
+     left:56px;
+     top:0px;
+     width:30px;
+     text-align:left;
+     color:#A0A0A0;
+     font-family:Arial Narrow;
+     font-size:8px;
+     padding:0;
+     margin:0;
+     line-height:8px;
+     height:8px;
+     border:none;
+}
+
+.wr360_player .container .theme_header a.watermark
+{
+     margin-left:5px;
+     margin-top:5px;
+     display:block;
+     float:left;
+     width:1px;
+     height:1px;
+     cursor:pointer;
+     display:none;
+}
+
+.wr360_player .container .theme_panel .toolbar
+{
+     position:relative;
+     height:28px;
+     padding: 1px 5px 0 2px;
+     margin:0px auto -1px auto;
+}
+
+.wr360_player .container .theme_panel .toolbar a.left_button
+{
+     background:url(../img/thin/left_combined.png) no-repeat -17px 0;
+     display:block;
+     float:left;
+     width:18px;
+     height:18px;
+     margin: 4px 0 0 0px;
+     cursor:pointer;
+}
+
+.wr360_player .container .theme_panel .toolbar a.left_button:hover
+{
+     background:url(../img/thin/left_combined.png) no-repeat 0 0;
+     display:block;
+     float:left;
+     width:18px;
+     height:18px;
+     margin: 4px 0 0 0px;
+     cursor:pointer;
+}
+
+.wr360_player .container .theme_panel .toolbar a.play_button
+{
+     background:url(../img/thin/play_combined.png) no-repeat -18px 0;
+     display:block;
+     float:left;
+     width:18px;
+     height:18px;
+     margin: 4px 0 0 7px;
+     cursor:pointer;
+}
+
+.wr360_player .container .theme_panel .toolbar a.play_button:hover
+{
+     background:url(../img/thin/play_combined.png) no-repeat 0px 0;
+     display:block;
+     float:left;
+     width:18px;
+     height:18px;
+     margin: 4px 0 0 7px;
+     cursor:pointer;
+}
+
+.wr360_player .container .theme_panel .toolbar a.pause_button
+{
+     background:url(../img/thin/pause_combined.png) no-repeat -18px 0;
+     display:block;
+     float:left;
+     width:18px;
+     height:18px;
+     margin: 4px 0 0 7px;
+     cursor:pointer;
+}
+
+.wr360_player .container .theme_panel .toolbar a.pause_button:hover
+{
+     background:url(../img/thin/pause_combined.png) no-repeat 0 0;
+     display:block;
+     float:left;
+     width:18px;
+     height:18px;
+     margin: 4px 0 0 7px;
+     cursor:pointer;
+}
+
+.wr360_player .container .theme_panel .toolbar a.right_button
+{
+     background:url(../img/thin/right_combined.png) no-repeat -0px 0;
+     display:block;
+     float:left;
+     width:18px;
+     height:18px;
+     margin: 4px 0 0 3px;
+     cursor:pointer;
+}
+
+.wr360_player .container .theme_panel .toolbar a.right_button:hover
+{
+     background:url(../img/thin/right_combined.png) no-repeat -17px 0;
+     display:block;
+     float:left;
+     width:18px;
+     height:18px;
+     margin: 4px 0 0 3px;
+     cursor:pointer;
+}
+.wr360_player .container .theme_panel .toolbar a.zoomin_button
+{
+     background:url(../img/thin/zoomin_combined.png) no-repeat -23px 0;
+     display:block;
+     float:left;
+     width:22px;
+     height:19px;
+     margin: 3px 0 0 7px;
+     cursor:pointer;
+}
+
+.wr360_player .container .theme_panel .toolbar a.zoomin_button:hover
+{
+     background:url(../img/thin/zoomin_combined.png) no-repeat 0px 0;
+     display:block;
+     float:left;
+     width:22px;
+     height:19px;
+     margin: 3px 0 0 7px;
+     cursor:pointer;
+}
+
+.wr360_player .container .theme_panel .toolbar a.zoomout_button
+{
+     background:url(../img/thin/zoomout_combined.png) no-repeat -23px 0;
+     display:block;
+     float:left;
+     width:22px;
+     height:19px;
+     margin: 3px 0 0 7px;
+     cursor:pointer;
+}
+
+.wr360_player .container .theme_panel .toolbar a.zoomout_button:hover
+{
+     background:url(../img/thin/zoomout_combined.png) no-repeat -0px 0;
+     display:block;
+     float:left;
+     width:22px;
+     height:19px;
+     margin: 3px 0 0 7px;
+     cursor:pointer;
+}
+
+.wr360_player .container .theme_panel .toolbar a.hotspotson_button
+{
+     background:url(../img/thin/spoton_combined.png) no-repeat -20px 0;
+     display:block;
+     float:left;
+     width:20px;
+     height:18px;
+     margin: 4px 0 0 7px;
+     cursor:pointer;
+}
+
+.wr360_player .container .theme_panel .toolbar a.hotspotson_button:hover
+{
+     background:url(../img/thin/spoton_combined.png) no-repeat 0 0;
+     display:block;
+     float:left;
+     width:20px;
+     height:18px;
+     margin: 4px 0 0 7px;
+     cursor:pointer;
+}
+
+.wr360_player .container .theme_panel .toolbar a.hotspotsoff_button
+{
+     background:url(../img/thin/spotoff_combined.png) no-repeat -20px 0;
+     display:block;
+     float:left;
+     width:20px;
+     height:18px;
+     margin: 4px 0 0 7px;
+     cursor:pointer;
+}
+
+.wr360_player .container .theme_panel .toolbar a.hotspotsoff_button:hover
+{
+     background:url(../img/thin/spotoff_combined.png) no-repeat 0 0;
+     display:block;
+     float:left;
+     width:20px;
+     height:18px;
+     margin: 4px 0 0 7px;
+     cursor:pointer;
+}
+
+.wr360_player .container .theme_panel .toolbar a.fullscreenon_button
+{
+     background:url(../img/thin/fullscreenon_combined.png) no-repeat -20px 0;
+     display:block;
+     float:left;
+     width:20px;
+     height:18px;
+     margin: 4px 0 0 7px;
+     cursor:pointer;
+}
+
+.wr360_player .container .theme_panel .toolbar a.fullscreenon_button:hover
+{
+     background:url(../img/thin/fullscreenon_combined.png) no-repeat 0 0;
+     display:block;
+     float:left;
+     width:20px;
+     height:18px;
+     margin: 4px 0 0 7px;
+     cursor:pointer;
+}
+
+.wr360_player .container .theme_panel .toolbar a.fullscreenoff_button
+{
+     background:url(../img/thin/fullscreenoff_combined.png) no-repeat -20px 0;
+     display:block;
+     float:left;
+     width:20px;
+     height:18px;
+     margin: 4px 0 0 7px;
+     cursor:pointer;
+}
+
+.wr360_player .container .theme_panel .toolbar a.fullscreenoff_button:hover
+{
+     background:url(../img/thin/fullscreenoff_combined.png) no-repeat 0 0;
+     display:block;
+     float:left;
+     width:20px;
+     height:18px;
+     margin: 4px 0 0 7px;
+     cursor:pointer;
+}
+
+.wr360_player a.fullscreenoff_button
+{
+    background:url(../img/thin/fullscreenoff_combined.png) no-repeat 0 0;
+    width:48px;
+    height:48px;
+    top:15px;
+    right:22px;
+    z-index:5000;
+    position:absolute;
+    cursor:pointer;
+    display:block;
+}
+
+.wr360_player a.fullscreenoff_button:hover
+{
+    background:url(../img/thin/fullscreenoff_combined.png) no-repeat -48px 0;
+    width:48px;
+    height:48px;
+    top:15px;
+    right:22px;
+    z-index:5000;
+    position:absolute;
+    cursor:pointer;
+    display:block;
+}
+
+.wr360_player .container .hotspot_rollover
+{
+    z-index: 15001;
+}
+
+.wr360_player .container .hotspot_indicator
+{
+    z-index: 2999;
+}
+
