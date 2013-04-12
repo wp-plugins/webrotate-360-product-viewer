@@ -58,6 +58,7 @@ To follow our news, articles, beta releases and more, consider the following opt
 * <a href="https://plus.google.com/116846466003073026624/posts">Google+</a>
 * <a href="https://twitter.com/webrotate360">Twitter</a>
 * <a href="http://www.webrotate360.com/blog/">Blog</a>
+* <a href="http://www.photogear360.com/blog/">Equipment Blog</a>
 
 
 == Installation ==
