@@ -45,7 +45,7 @@ License: GPLv2
         return (sprintf(
             $replace,
             'wr360' . $extract["name"],
-            plugins_url("webrotate360/viewloader.html"),
+            plugins_url("webrotate-360-product-viewer/viewloader.html"),
             urlencode($extract["config"]),
             urlencode($extract["rootpath"]),
             $extract["width"],
@@ -80,8 +80,8 @@ License: GPLv2
             $extract["height"],
             'wr360' . $extract["name"].'_playerid',
             'wr360' . $extract["name"].'_playerid',
-            plugins_url("webrotate360/imagerotator/html/img/basic"),
-            plugins_url("webrotate360/license.lic"),
+            plugins_url("webrotate-360-product-viewer/imagerotator/html/img/basic"),
+            plugins_url("webrotate-360-product-viewer/license.lic"),
             $extract["rootpath"],
             $extract["config"]));
     }
@@ -108,8 +108,8 @@ License: GPLv2
     function add_filter_webrotate_embed_viewer($content)
     {
         $content .= "<script language='javascript' type='text/javascript'>";
-        $content .= "function getWR360License(){return '" . plugins_url("webrotate360/license.lic") . "';}";
-        $content .= "function getWR360GraphicsPath(){return '" . plugins_url("webrotate360/imagerotator/html/img/basic") . "';}";
+        $content .= "function getWR360License(){return '" . plugins_url("webrotate-360-product-viewer/license.lic") . "';}";
+        $content .= "function getWR360GraphicsPath(){return '" . plugins_url("webrotate-360-product-viewer/imagerotator/html/img/basic") . "';}";
         $content .= "</script>";
 		return ($content);
     }
