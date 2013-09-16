@@ -3,7 +3,7 @@ Contributors: sergey z., mahor
 Donate link: http://www.webrotate360.com/360-product-viewer.html
 Tags: 360 viewer, 360 product viewer, 360 views, 360 product views, image zoom, 3D viewer, pano viewer, product zoom, 360 degree panorama, 360 product spin,  html5, QTVR, 360 product photography, virtual tour, 360 degree photo, 3D view, product rotation, 360 image spin, 360 spin, spin 360, webrotate
 Requires at least: 3.0.0
-Tested up to: 3.5.1
+Tested up to: 3.6.1
 Stable tag: 2.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -70,10 +70,10 @@ Please follow these simple steps to install the WordPress extension on your serv
 
 * Install WebRotate 360 Product Viewer for WordPress by either installing directly from your WordPress Admin area or download the module manually and copy unzipped webrotate360 folder into your wp-content/plugins.
 * Activate the module via the Plugins page in your WordPress Admin.
-* Upload your 360 views via ftp to your web server and note the location of xml configuration file(s) in the uploaded folder(s) as you will need it for the shortcodes as shown below. <strong>We also have supplied one test 360 product view that is located inside the plugin folder under 360_assets. To try this test view in your shortcode, you can use the following config path per the shortcode example below:  <em>/your-wordpress-site/wp-content/plugins/webrotate-360-product-viewer/360_assets/sampleshoe/config.xml</em></strong>
+* Upload your 360 views via ftp to your web server and note the location of xml configuration file(s) in the uploaded folder(s) as you will need it for the shortcodes as shown below. <strong>We also have supplied one test 360 product view that is located inside the plugin folder under 360_assets. To try this test view in your shortcode, you can use the following config path per the shortcode examples below:  <em>/your-wordpress-site/wp-content/plugins/webrotate-360-product-viewer/360_assets/sampleshoe/config.xml</em></strong>
 * Simply add the following shortcode inside your post or page where you would like to see the 360 view embedded, substituting name, width, height and config with your own values.
 
-**Example 1:** [wr360embed name="yourviewname" width="100%" height="450px" config="/your-wordpress-site/360-assets/sampleshoe/config.xml"]
+**Example 1:** ‘[wr360embed name="yourviewname" width="100%" height="450px" config="/your-wordpress-site/360-assets/sampleshoe/config.xml"]’
 
 <h4>Integrate via popup</h4>
 Use the following shortcode to integrate via lightbox popup (replace name, width, height and config with your own values):
