@@ -3,7 +3,7 @@ Contributors: sergey z., mahor
 Donate link: http://www.webrotate360.com/360-product-viewer.html
 Tags: 360 viewer, 360 product viewer, 360 views, 360 product views, image zoom, 3D viewer, pano viewer, product zoom, 360 degree panorama, 360 product spin,  html5, QTVR, 360 product photography, virtual tour, 360 degree photo, 3D view, product rotation, 360 image spin, 360 spin, spin 360, webrotate
 Requires at least: 3.0.0
-Tested up to: 3.6.1
+Tested up to: 3.8.1
 Stable tag: 2.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
