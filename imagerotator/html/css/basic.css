@@ -2,13 +2,13 @@
 {
      width:100%;
      height:100%;
-    -webkit-touch-callout:none;
-	-webkit-user-select:none;
-	-khtml-user-select:none;
-	-moz-user-select:none;
-	-ms-user-select:none;
-	user-select:none;
-	-webkit-tap-highlight-color:rgba(0,0,0,0);
+     -webkit-touch-callout:none;
+	 -webkit-user-select:none;
+	 -khtml-user-select:none;
+	 -moz-user-select:none;
+	 -ms-user-select:none;
+	 user-select:none;
+	 -webkit-tap-highlight-color:rgba(0,0,0,0);
      background:#fff;
 }
 
@@ -17,15 +17,16 @@
      position:relative;
      overflow:hidden;
      margin:0 !important;
+	 background: inherit !important;
 }
 
 .wr360_player img
 {
-    max-width:none !important;
-    max-height:none !important;
-    border:none !important;
-    box-shadow:none !important;
-	cursor:pointer !important;
+     max-width:none !important;
+     max-height:none !important;
+     border:none !important;
+     box-shadow:none !important;
+	 cursor:pointer !important;
 }
 
 .wr360_player .container .panning2,
@@ -33,7 +34,7 @@
 {
      position:absolute;
      left:0;
-    top:0;
+     top:0;
 }
 
 .wr360_player .container .theme_panel_back
@@ -109,6 +110,8 @@
      height:35px;
      margin:1px auto -1px auto;
      padding:0 10px 0 10px;
+	 -moz-box-sizing: content-box;
+	 box-sizing: content-box;
 }
 
 .wr360_player .container .theme_panel .toolbar a.left_button

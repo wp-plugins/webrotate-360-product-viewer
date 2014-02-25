@@ -17,6 +17,7 @@
      position:relative;
      overflow:hidden;
      margin:0 !important;
+	 background: inherit !important;
 }
 
 .wr360_player img
@@ -108,6 +109,8 @@
      height:28px;
      padding: 1px 5px 0 2px;
      margin:0px auto -1px auto;
+	 -moz-box-sizing: content-box;
+	 box-sizing: content-box;
 }
 
 .wr360_player .container .theme_panel .toolbar a.left_button

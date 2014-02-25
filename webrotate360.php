@@ -29,14 +29,22 @@ License: GPLv2
                 'gallery' => 'false'
             ), $atts);
 
+		$height = 300;
+		if (!empty($extract["height"]))
+			$height = str_ireplace("px", "", $extract["height"]);
+			
+		$width = 300;
+		if (!empty($extract["width"]))
+			$width = str_ireplace("px", "", $extract["width"]);
+			
         $replace  = "";
         if ( $extract["gallery"] == "true")
         {
-            $replace .= "<a id='%s' href='%s?config=%s&root=%s&iframe=true&width=%s&height=%s' rel=prettyPhoto[iframe]>";
+            $replace .= "<a id='%s' href='%s?config=%s&amp;root=%s&amp;height=%s&amp;iframe=true&amp;width=%s&amp;height=%s' rel=prettyPhoto[iframe]>";
         }
         else
         {
-            $replace .= "<a id='%s' href='%s?config=%s&root=%s&iframe=true&width=%s&height=%s' rel=prettyPhoto>";
+            $replace .= "<a id='%s' href='%s?config=%s&amp;root=%s&amp;height=%s&amp;iframe=true&amp;width=%s&amp;height=%s' rel=prettyPhoto>";
         }
 
         $replace .= $content;
@@ -48,10 +56,9 @@ License: GPLv2
             plugins_url("webrotate-360-product-viewer/viewloader.html"),
             urlencode($extract["config"]),
             urlencode($extract["rootpath"]),
-            $extract["width"],
-            $extract["height"],
-            $extract["width"],
-            $extract["height"]
+			$height,
+            $width,
+            $height
         ));
     }
 
@@ -63,14 +70,19 @@ License: GPLv2
                     'width' => '',
                     'height' => '',
                     'rootpath' => '',
-                    'config' => ''
+                    'config' => '',
+					'basewidth' => ''
                     ), $atts);
 
+		$baseWidth = 0;
+		if (!empty($extract["basewidth"]))
+			$baseWidth = str_ireplace("px", "", $extract["basewidth"]);
+		
         $replace  = "";
         $replace .= "<div id='%s' class='webrotate360' style='width:%s; height:%s;'>";
         $replace .= "<div id='%s' class='wr360_player'></div></div>";
         $replace .= "<script language='javascript' type='text/javascript'>";
-        $replace .= "jQuery(document).ready(function(){jQuery('#' + '%s').rotator({graphicsPath: '%s', licenseFileURL: '%s', rootPath:'%s', configFileURL:'%s'});});";
+        $replace .= "jQuery(document).ready(function(){jQuery('#' + '%s').rotator({graphicsPath: '%s', licenseFileURL: '%s', rootPath:'%s', configFileURL:'%s', responsiveBaseWidth:%s});});";
         $replace .= "</script>";
 
         return (sprintf(
@@ -83,7 +95,8 @@ License: GPLv2
             plugins_url("webrotate-360-product-viewer/imagerotator/html/img/basic"),
             plugins_url("webrotate-360-product-viewer/license.lic"),
             $extract["rootpath"],
-            $extract["config"]));
+            $extract["config"],
+			$baseWidth));
     }
 
 
