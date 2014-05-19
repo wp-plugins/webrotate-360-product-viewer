@@ -75,6 +75,8 @@ Please follow these simple steps to install the WordPress extension on your serv
 
 **Example 1:** [wr360embed name="yourviewname" width="100%" height="450px" config="/your-wordpress-site/360-assets/sampleshoe/config.xml"]
 
+<i>You can also add an extra shortcode parameter called basewidth and specify the original width of your embedded 360 product viewer (i.e., basewidth="620px"). So when your primary shortcode width parameter is relative (i.e 100% as in the example above), the basewidth setting will force the 360 product viewer to scale its height relative to your original viewer width (basewidth). If the basewidth parameter is not set, the viewer height is not scaled when it's embedded in a responsive layout environment.</i>
+
 <h4>Integrate via popup</h4>
 Use the following shortcode to integrate via lightbox popup (replace name, width, height and config with your own values):
 
