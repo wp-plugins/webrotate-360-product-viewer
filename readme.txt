@@ -53,7 +53,7 @@ If you haven't created 360 product views with WebRotate 360 Product Viewer befor
 [youtube http://www.youtube.com/watch?v=W3uFpXy1ne4]
 
 <h4>Support</h4>
-Check out the Installation tab for specific WordPress installation instructions. For more information and your questions, please visit our <a href="http://www.360-product-views.com/forum/">product forum</a> or email us at support at webrotate360 dot com. 
+Check out the Installation tab for specific WordPress installation instructions. For more information and your questions, please visit our <a href="http://www.360-product-views.com/forum/">product forum</a> or email us at support at webrotate360 dot com. We would be happy to assist with your WordPress integration if you have any issues!
 
 <h4>Connect with us</h4>
 To follow our news, articles, beta releases and more, consider the following options:
