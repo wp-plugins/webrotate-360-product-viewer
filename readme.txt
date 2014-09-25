@@ -72,24 +72,24 @@ Please follow these simple steps to install the WordPress plugin on your server:
 
 * Install WebRotate 360 Product Viewer for WordPress by either installing directly from your WordPress Admin area or download the module manually and copy unzipped webrotate360 folder into your wp-content/plugins.
 * Activate the module via the Plugins page in your WordPress Admin.
-* Upload your 360 views via ftp to your web server and note the location of an xml configuration file(s) in the uploaded folder(s) as you will need it for the shortcodes as shown below. <strong>We also have supplied one test 360 product view that is located inside the plugin folder under 360_assets. To try this test view in your shortcode, you can use the following config path per the shortcode examples below:  <em>/wp-content/plugins/webrotate-360-product-viewer/360_assets/sampleshoe/config.xml</em></strong>
-* Simply add the following shortcode inside your post or page where you would like to see the 360 product view embedded, substituting name, width, height and config with your own values.
+* Upload your 360 views via ftp to your web server and note the location of an xml configuration file(s) in the uploaded folder(s) as you will need it for the shortcodes as shown below. <strong>We also have supplied one test 360 product view that is located inside the plugin folder under 360_assets. To try this test view in your shortcode, you can use the following config path per the first shortcode example below:  <em>/wp-content/plugins/webrotate-360-product-viewer/360_assets/sampleshoe/config.xml</em></strong>
+* Simply add the following shortcode inside a post or page where you would like to see your 360 product view embedded, substituting name (no white spaces), width, height and config with your own values.
 
-**Example 1:** [wr360embed name="yourviewname" width="100%" height="450px" config="/your-wordpress-site/360-assets/sampleshoe/config.xml"]
+**Example 1:** [wr360embed name="yourviewname" width="100%" height="450px" config="/wp-content/plugins/webrotate-360-product-viewer/360_assets/sampleshoe/config.xml"]
 
 <i>You can also add an extra shortcode parameter called basewidth and specify the original width of your embedded 360 product viewer (i.e., basewidth="620px"). So when your primary shortcode width parameter is relative (i.e 100% as in the example above), the basewidth setting will force the 360 product viewer to scale its height relative to your original viewer width (basewidth). If the basewidth parameter is not set, the viewer height is not scaled when it's embedded in a responsive layout environment.</i>
 
 <h4>Integrate via popup</h4>
-Use the following shortcode to integrate via lightbox popup (replace name, width, height and config with your own values):
+Use the following shortcode to integrate via lightbox popup (replace name, width, height and config with your own values accordingly; please note that the sample config path below indicates that your 360 product view is located in the root of your WordPress website under the 360_assets folder i.e on the same level with wp-content that you would need to create there first):
 
-**Example 2:** [wr360popup name="yourviewname" width="620" height="450" config="/your-wordpress-site/360-assets/sampleshoe2/config.xml"]your thumbnail image or text[/wr360popup]
+**Example 2:** [wr360popup name="yourviewname" width="620" height="450" config="/360_assets/sampleshoe2/config.xml"]your thumbnail image or text[/wr360popup]
 
 <h4>Popup gallery</h4>
 If you need to show a gallery of your 360 views via a popup, add multiple wr360popup shortcodes for each of your 360 views with an extra parameter called gallery:
 
-[wr360popup name="yourviewname1" gallery="true" width="620" height="450" config="/your-wordpress-site/360-assets/sampleshoe2/config.xml"]your thumbnail image or text[/wr360popup]
+[wr360popup name="yourviewname1" gallery="true" width="620" height="450" config="/360_assets/sampleshoe2/config.xml"]your thumbnail image or text[/wr360popup]
 
-[wr360popup name="yourviewname2" gallery="true" width="400" height="400" config="/your-wordpress-site/360-assets/sampleshoe3/config.xml"]your thumbnail image or text[/wr360popup]
+[wr360popup name="yourviewname2" gallery="true" width="400" height="400" config="/360_assets/sampleshoe3/config.xml"]your thumbnail image or text[/wr360popup]
 
 
 == Uninstall ==

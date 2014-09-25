@@ -315,6 +315,13 @@
 			width: 100%;
 		}
 		
+		/* ---- Fix for default WP4.0 theme -----*/
+		.pp_content_container  iframe
+		{
+			margin: 0;
+			display: block;
+		}
+		
 			.pp_content_container .pp_left { padding-left: 20px; }
 			.pp_content_container .pp_right { padding-right: 20px; }
 		

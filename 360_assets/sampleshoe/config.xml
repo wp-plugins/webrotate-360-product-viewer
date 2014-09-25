@@ -9,7 +9,6 @@
   <hotspots><hotspot id="spot1" absolutePosition="false" className="WebRotate360.ImageRotator.Html5HotspotPresenter" indicatorImage="spot_shape2.gif" alpha="0.8">
       <spotinfo>
         <cdata><![CDATA[<div style="padding:0px 6px 15px 6px; margin:0; line-height:18px; background-color:#FAFAFA; color: #727272; width:216px; border:1px #eeeeee solid;font-family: verdana;font-size:12px" >
-<img src="imagerotator/html/img/basic/infoico.png" style="position:absolute; top:6px; right:7px"/>
 <p style="font-size:12px;font-weight:bold;color:#468AC1;padding:5px 0 5px 8px;margin:0;border-bottom:1px solid #dddddd">NEW HTML CONTENT
 </p>
 <p style="padding:7px 0px 0 8px; margin:0">
@@ -17,19 +16,19 @@ Edit these hot-spots as HTML markup in SpotEditor and use any design you need wi
 <span style="color:red">Colors,&nbsp;</span>
 <span><b>Fonts,</b>&nbsp;</span>
 <span style="font-size:13px; color:black">Sizes,</span>
-<span><em>bullets</em>, images, <a href="http://www.webrotate360.com">URLs</a>, etc!</span>
+<span><em>bullets</em>, images, <a href="http://www.webrotate360.com" target="_parent">URLs</a>, etc!</span>
 </p>
 </div>]]></cdata>
       </spotinfo>
     </hotspot>
     <hotspot id="spot2" absolutePosition="false" className="WebRotate360.ImageRotator.Html5HotspotPresenter" indicatorImage="spot_shape1.gif" alpha="0.8">
-      <spotinfo src="images/spots/hotspot.png" url="http://www.twitter.com/webrotate360" urlTarget="_blank" />
+      <spotinfo src="images/spots/hotspot.png" url="http://www.twitter.com/webrotate360" urlTarget="_parent" />
     </hotspot>
     <hotspot id="spot3" absolutePosition="false" className="WebRotate360.ImageRotator.Html5HotspotPresenter" indicatorImage="spot_shape2.gif" alpha="0.8">
       <spotinfo txt="SIMPLE TEXT CONTENT&#xD;&#xA;&#xD;&#xA;* Use WebRotate 360 SpotEditor&#xD;&#xA;* Create a spot and add text&#xD;&#xA;* Set background color and font&#xD;&#xA;* Set rollover box width" txtWidth="200" txtBkColor="#FBFBFB" txtColor="#696A6B" fntHeight="12" />
     </hotspot>
     <hotspot id="logospot" absolutePosition="true" className="WebRotate360.ImageRotator.StaticHotspotPresenter" margin="0,10,0,0" align="bottom,right">
-      <spotinfo src="images/spots/logo.png" url="http://www.webrotate360.com/360-product-viewer-buy.html" urlTarget="_blank"/>
+      <spotinfo src="images/spots/logo.png" url="http://www.webrotate360.com/360-product-viewer-buy.html" urlTarget="_parent"/>
     </hotspot>
   </hotspots>
   <images highresWidth="1800" highresHeight="1187">
