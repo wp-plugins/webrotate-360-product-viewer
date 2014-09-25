@@ -18,7 +18,7 @@ WebRotate 360 Product Viewer for WordPress is a free plugin that can be used to 
 
 
 <h4>Features</h4>
-This product was built by us from grounds up in-house in Pasadena, California, USA with its first commercial release dating back to 2010. Unlike other software on the Web, our 360 product viewing technology utilizes our own extensive experience producing professional 360 product photography and 3D views.
+This product was built by us from grounds up in-house in Pasadena, California, with its first commercial release dating back to 2010. Unlike other software on the Web, our 360 product viewing technology utilizes our own extensive experience producing professional 360 product photography and 3D views.
 
 * Fine-tuned for E-Commerce with real business in mind.
 * Designed by professional 360 photography studio.
