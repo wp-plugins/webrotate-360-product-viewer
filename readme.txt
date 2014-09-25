@@ -80,7 +80,7 @@ Please follow these simple steps to install the WordPress plugin on your server:
 <i>You can also add an extra shortcode parameter called basewidth and specify the original width of your embedded 360 product viewer (i.e., basewidth="620px"). So when your primary shortcode width parameter is relative (i.e 100% as in the example above), the basewidth setting will force the 360 product viewer to scale its height relative to your original viewer width (basewidth). If the basewidth parameter is not set, the viewer height is not scaled when it's embedded in a responsive layout environment.</i>
 
 <h4>Integrate via popup</h4>
-Use the following shortcode to integrate via lightbox popup (replace name, width, height and config with your own values accordingly). Please note that the sample config path below indicates that the 360 product view is located in the root of your WordPress website under the 360_assets folder (i.e on the same level with wp-content) that you would need to create there first:
+Use the following shortcode to integrate via lightbox popup (replace name, width, height and config with your own values accordingly). Please note that the sample config path below indicates that the 360 product view was uploaded under the 360_assets folder located in the root of your WordPress website  (i.e on the same level with wp-content) that you would need to create there first:
 
 **Example 2:** [wr360popup name="yourviewname" width="620" height="450" config="/360_assets/sampleshoe2/config.xml"]your thumbnail image or text[/wr360popup]
 
