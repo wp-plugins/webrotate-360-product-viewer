@@ -44,7 +44,7 @@ Support our work by <a href="http://www.webrotate360.com/360-product-viewer-buy.
 * Free support and core product upgrades.
 
 <h4>How to create 360 product views</h4>
-If you haven't created 360 product views with WebRotate 360 Product Viewer before, please download our free software (Windows or Mac OS X) and follow this simple YouTube video or check out the following user guide on how to create 360 spins on your computer which you can then upload to your WordPress installation via FTP:
+If you haven't created 360 product views with WebRotate 360 Product Viewer before, please download our free software (Windows or Mac OS X) and follow this simple YouTube video or check out the following user guide on how to create 360 spins on your computer which you can then upload to your WordPress installation via FTP. Note that you only need to upload a single folder that is auto-created under 360_assets in the published folder of your SpotEditor project upon publish.
 
 * <a href="http://www.webrotate360.com/360-product-viewer.html">Download WebRotate 360 Product Viewer Software</a><br>
 * <a href="http://www.webrotate360.com/360_product_viewer_download/Readme.pdf">User Guide</a><br>
@@ -72,7 +72,8 @@ Please follow these simple steps to install the WordPress plugin on your server:
 
 * Install WebRotate 360 Product Viewer for WordPress by either installing directly from your WordPress Admin area or download the module manually and copy unzipped webrotate360 folder into your wp-content/plugins.
 * Activate the module via the Plugins page in your WordPress Admin.
-* Upload your 360 views via ftp to your web server and note the location of an xml configuration file(s) in the uploaded folder(s) as you will need it for the shortcodes as shown below. <strong>We also have supplied one test 360 product view that is located inside the plugin folder under 360_assets. To try this test view in your shortcode, you can use the following config path per the first shortcode example below:  <em>/wp-content/plugins/webrotate-360-product-viewer/360_assets/sampleshoe/config.xml</em></strong>
+* Upload your 360 views via ftp to your web server and note the location of an xml configuration file(s) in the uploaded folder(s) as you will need it for the shortcodes as shown below. Note that you only need to upload a single folder that is auto-created under 360_assets in the published folder of your SpotEditor project upon publish.
+* <strong>We also have supplied one test 360 product view that is located inside the plugin folder under 360_assets. To try this test view in your shortcode, you can use the following config path per the first shortcode example below:  <em>/wp-content/plugins/webrotate-360-product-viewer/360_assets/sampleshoe/config.xml</em></strong>
 * Simply add the following shortcode inside a post or page where you would like to see your 360 product view embedded, substituting name (no white spaces), width, height and config with your own values.
 
 **Example 1:** [wr360embed name="yourviewname" width="100%" height="450px" config="/wp-content/plugins/webrotate-360-product-viewer/360_assets/sampleshoe/config.xml"]
