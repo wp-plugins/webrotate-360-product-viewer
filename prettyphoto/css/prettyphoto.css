@@ -17,7 +17,7 @@
 	
 	div.pp_default .pp_top .pp_left { background: url(../images/prettyPhoto/default/sprite.png) -78px -93px no-repeat; } /* Top left corner */
 	div.pp_default .pp_top .pp_middle { background: url(../images/prettyPhoto/default/sprite_x.png) top left repeat-x; } /* Top pattern/color */
-	div.pp_default .pp_top .pp_right { background: url(../images/prettyPhoto/default/sprite.png) -112px -93px no-repeat; } /* Top right corner */
+	div.pp_default .pp_top .pp_right { background: url(../images/prettyPhoto/default/sprite.png) -105px -93px no-repeat; } /* Top right corner */
 	
 	div.pp_default .pp_content .ppt { color: #f8f8f8; }
 	div.pp_default .pp_content_container .pp_left { background: url(../images/prettyPhoto/default/sprite_y.png) -7px 0 repeat-y; padding-left: 13px; }
@@ -30,6 +30,8 @@
 	div.pp_default .pp_contract { background: url(../images/prettyPhoto/default/sprite.png) 0 -84px no-repeat; cursor: pointer; width: 28px; height: 28px; } /* Contract button */
 	div.pp_default .pp_contract:hover { background: url(../images/prettyPhoto/default/sprite.png) 0 -113px no-repeat; cursor: pointer; } /* Contract button hover */
 	div.pp_default .pp_close { width: 30px; height: 30px; background: url(../images/prettyPhoto/default/sprite.png) 2px 1px no-repeat; cursor: pointer; } /* Close button */
+    div.pp_default a.pp_close {right: 3px !important;}
+
 	div.pp_default #pp_full_res .pp_inline { color: #000; } 
 	div.pp_default .pp_gallery ul li a { background: url(../images/prettyPhoto/default/default_thumb.png) center center #f8f8f8; border:1px solid #aaa; }
 	div.pp_default .pp_gallery ul li a:hover,
@@ -55,7 +57,7 @@
 
 	div.pp_default .pp_bottom .pp_left { background: url(../images/prettyPhoto/default/sprite.png) -78px -127px no-repeat; } /* Bottom left corner */
 	div.pp_default .pp_bottom .pp_middle { background: url(../images/prettyPhoto/default/sprite_x.png) bottom left repeat-x; } /* Bottom pattern/color */
-	div.pp_default .pp_bottom .pp_right { background: url(../images/prettyPhoto/default/sprite.png) -112px -127px no-repeat; } /* Bottom right corner */
+	div.pp_default .pp_bottom .pp_right { background: url(../images/prettyPhoto/default/sprite.png) -105px -127px no-repeat; } /* Bottom right corner */
 
 	div.pp_default .pp_loaderIcon { background: url(../images/prettyPhoto/default/loader.gif) center center no-repeat; } /* Loader icon */
 
@@ -314,6 +316,13 @@
 			text-align: left;
 			width: 100%;
 		}
+
+        /* ---- Fix for default WP4.0 theme -----*/
+        .pp_content_container  iframe
+        {
+            margin: 0;
+            display: block;
+        }
 		
 			.pp_content_container .pp_left { padding-left: 20px; }
 			.pp_content_container .pp_right { padding-right: 20px; }
@@ -458,7 +467,7 @@
 		}
 			
 		a.pp_close {
-			position: absolute; right: 0; top: 0; 
+			position: absolute; right: 0px; top: 0;
 			display: block;
 			line-height:22px;
 			text-indent: -10000px;

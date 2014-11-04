@@ -2,13 +2,15 @@
 {
      width:100%;
      height:100%;
-    -webkit-touch-callout:none;
-	-webkit-user-select:none;
-	-khtml-user-select:none;
-	-moz-user-select:none;
-	-ms-user-select:none;
-	user-select:none;
-	-webkit-tap-highlight-color:rgba(0,0,0,0);
+     -webkit-touch-callout:none;
+	 -webkit-user-select:none;
+	 -khtml-user-select:none;
+	 -moz-user-select:none;
+	 -ms-user-select:none;
+	 user-select:none;
+	 -webkit-tap-highlight-color:rgba(0,0,0,0);
+     -ms-touch-action:none;
+     touch-action:none;
      background:#fff;
 }
 
@@ -17,15 +19,17 @@
      position:relative;
      overflow:hidden;
      margin:0 !important;
+	 background:inherit !important;
+     max-width:none !important;
 }
 
 .wr360_player img
 {
-    max-width:none !important;
-    max-height:none !important;
-    border:none !important;
-    box-shadow:none !important;
-	cursor:pointer !important;
+     max-width:none !important;
+     max-height:none !important;
+     border:none !important;
+     box-shadow:none !important;
+	 cursor:pointer !important;
 }
 
 .wr360_player .container .panning2,
@@ -33,7 +37,7 @@
 {
      position:absolute;
      left:0;
-    top:0;
+     top:0;
 }
 
 .wr360_player .container .theme_panel_back
@@ -44,7 +48,7 @@
      left:0;
      margin-bottom:0px;
      height:35px;
-     z-index: 2500;
+     z-index:2500;
 }
 
 .wr360_player .container .theme_panel
@@ -55,13 +59,13 @@
      left:0;
      margin-bottom:0px;
      height:35px;
-     z-index: 2501;
+     z-index:2501;
 }
 
 .wr360_player .container .theme_header
 {
-    height: 20px;
-    z-index: 2500;
+    height:20px;
+    z-index:2500;
 }
 
 .wr360_player .container .theme_header .progress_bar
@@ -109,6 +113,15 @@
      height:35px;
      margin:1px auto -1px auto;
      padding:0 10px 0 10px;
+	 -moz-box-sizing:content-box !important;
+	 box-sizing:content-box !important;
+     border:none !important;
+     background:inherit !important;
+}
+
+.wr360_player .container .theme_panel .toolbar a
+{
+     transition:none !important;
 }
 
 .wr360_player .container .theme_panel .toolbar a.left_button
@@ -320,6 +333,7 @@
      position:absolute;
      cursor:pointer;
      display:block;
+     transition:none !important;
 }
 
 .wr360_player a.fullscreenoff_button:hover
@@ -337,10 +351,10 @@
 
 .wr360_player .container .hotspot_rollover
 {
-    z-index: 15001;
+    z-index:15001;
 }
 
 .wr360_player .container .hotspot_indicator
 {
-    z-index: 2999;
+    z-index:2999;
 }

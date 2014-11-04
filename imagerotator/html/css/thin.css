@@ -2,7 +2,7 @@
 {
      width:100%;
      height:100%;
-     background: #fff;
+     background:#fff;
     -webkit-touch-callout:none;
 	-webkit-user-select:none;
 	-khtml-user-select:none;
@@ -10,6 +10,8 @@
 	-ms-user-select:none;
 	user-select:none;
 	-webkit-tap-highlight-color:rgba(0,0,0,0);
+    -ms-touch-action:none;
+    touch-action:none;
 }
 
 .wr360_player .container
@@ -17,14 +19,16 @@
      position:relative;
      overflow:hidden;
      margin:0 !important;
+	 background:inherit !important;
+     max-width:none !important;
 }
 
 .wr360_player img
 {
-    max-width:none !important;
-    max-height:none !important;
-    border:none !important;
-    box-shadow:none !important;
+     max-width:none !important;
+     max-height:none !important;
+     border:none !important;
+     box-shadow:none !important;
 }
 
 .wr360_player .container .panning2,
@@ -43,7 +47,7 @@
      left:0;
      margin-bottom:0px;
      height:28px;
-     z-index: 2500;
+     z-index:2500;
 }
 
 .wr360_player .container .theme_panel
@@ -54,18 +58,18 @@
      left:0;
      margin-bottom:0px;
      height:28px;
-     z-index: 2501;
+     z-index:2501;
 }
 
 .wr360_player .container .theme_header
 {
-     height: 20px;
-     z-index: 2500;
+     height:20px;
+     z-index:2500;
 }
 
 .wr360_player .container .theme_header .progress_bar
 {
-     background:url(../img/basic/load_js.gif) left top no-repeat;
+     background:url(../img/thin/load_js.gif) left top no-repeat;
      margin:1px 0 0 6px;
      float:left;
      width:43px;
@@ -108,6 +112,15 @@
      height:28px;
      padding: 1px 5px 0 2px;
      margin:0px auto -1px auto;
+	 -moz-box-sizing:content-box !important;
+	 box-sizing:content-box !important;
+     border:none !important;
+     background:inherit !important;
+}
+
+.wr360_player .container .theme_panel .toolbar a
+{
+    transition:none !important;
 }
 
 .wr360_player .container .theme_panel .toolbar a.left_button
@@ -117,7 +130,7 @@
      float:left;
      width:18px;
      height:18px;
-     margin: 4px 0 0 0px;
+     margin:4px 0 0 0px;
      cursor:pointer;
 }
 
@@ -128,7 +141,7 @@
      float:left;
      width:18px;
      height:18px;
-     margin: 4px 0 0 0px;
+     margin:4px 0 0 0px;
      cursor:pointer;
 }
 
@@ -139,7 +152,7 @@
      float:left;
      width:18px;
      height:18px;
-     margin: 4px 0 0 7px;
+     margin:4px 0 0 7px;
      cursor:pointer;
 }
 
@@ -150,7 +163,7 @@
      float:left;
      width:18px;
      height:18px;
-     margin: 4px 0 0 7px;
+     margin:4px 0 0 7px;
      cursor:pointer;
 }
 
@@ -161,7 +174,7 @@
      float:left;
      width:18px;
      height:18px;
-     margin: 4px 0 0 7px;
+     margin:4px 0 0 7px;
      cursor:pointer;
 }
 
@@ -172,7 +185,7 @@
      float:left;
      width:18px;
      height:18px;
-     margin: 4px 0 0 7px;
+     margin:4px 0 0 7px;
      cursor:pointer;
 }
 
@@ -183,7 +196,7 @@
      float:left;
      width:18px;
      height:18px;
-     margin: 4px 0 0 3px;
+     margin:4px 0 0 3px;
      cursor:pointer;
 }
 
@@ -194,7 +207,7 @@
      float:left;
      width:18px;
      height:18px;
-     margin: 4px 0 0 3px;
+     margin:4px 0 0 3px;
      cursor:pointer;
 }
 .wr360_player .container .theme_panel .toolbar a.zoomin_button
@@ -204,7 +217,7 @@
      float:left;
      width:22px;
      height:19px;
-     margin: 3px 0 0 7px;
+     margin:3px 0 0 7px;
      cursor:pointer;
 }
 
@@ -215,7 +228,7 @@
      float:left;
      width:22px;
      height:19px;
-     margin: 3px 0 0 7px;
+     margin:3px 0 0 7px;
      cursor:pointer;
 }
 
@@ -237,7 +250,7 @@
      float:left;
      width:22px;
      height:19px;
-     margin: 3px 0 0 7px;
+     margin:3px 0 0 7px;
      cursor:pointer;
 }
 
@@ -248,7 +261,7 @@
      float:left;
      width:20px;
      height:18px;
-     margin: 4px 0 0 7px;
+     margin:4px 0 0 7px;
      cursor:pointer;
 }
 
@@ -259,7 +272,7 @@
      float:left;
      width:20px;
      height:18px;
-     margin: 4px 0 0 7px;
+     margin:4px 0 0 7px;
      cursor:pointer;
 }
 
@@ -270,7 +283,7 @@
      float:left;
      width:20px;
      height:18px;
-     margin: 4px 0 0 7px;
+     margin:4px 0 0 7px;
      cursor:pointer;
 }
 
@@ -281,7 +294,7 @@
      float:left;
      width:20px;
      height:18px;
-     margin: 4px 0 0 7px;
+     margin:4px 0 0 7px;
      cursor:pointer;
 }
 
@@ -292,7 +305,7 @@
      float:left;
      width:20px;
      height:18px;
-     margin: 4px 0 0 7px;
+     margin:4px 0 0 7px;
      cursor:pointer;
 }
 
@@ -303,29 +316,7 @@
      float:left;
      width:20px;
      height:18px;
-     margin: 4px 0 0 7px;
-     cursor:pointer;
-}
-
-.wr360_player .container .theme_panel .toolbar a.fullscreenoff_button
-{
-     background:url(../img/thin/fullscreenoff_combined.png) no-repeat -20px 0;
-     display:block;
-     float:left;
-     width:20px;
-     height:18px;
-     margin: 4px 0 0 7px;
-     cursor:pointer;
-}
-
-.wr360_player .container .theme_panel .toolbar a.fullscreenoff_button:hover
-{
-     background:url(../img/thin/fullscreenoff_combined.png) no-repeat 0 0;
-     display:block;
-     float:left;
-     width:20px;
-     height:18px;
-     margin: 4px 0 0 7px;
+     margin:4px 0 0 7px;
      cursor:pointer;
 }
 
@@ -340,6 +331,7 @@
     position:absolute;
     cursor:pointer;
     display:block;
+    transition:none !important;
 }
 
 .wr360_player a.fullscreenoff_button:hover
@@ -357,11 +349,11 @@
 
 .wr360_player .container .hotspot_rollover
 {
-    z-index: 15001;
+    z-index:15001;
 }
 
 .wr360_player .container .hotspot_indicator
 {
-    z-index: 2999;
+    z-index:2999;
 }
 

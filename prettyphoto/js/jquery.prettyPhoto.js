@@ -35,7 +35,6 @@
 			callback: function(){}, /* Called when prettyPhoto is closed */
 			ie6_fallback: true,
 			markup: '<div class="pp_pic_holder"> \
-						<div class="ppt">&nbsp;</div> \
 						<div class="pp_top"> \
 							<div class="pp_left"></div> \
 							<div class="pp_middle"></div> \
@@ -95,7 +94,7 @@
 		var matchedObjects = this, percentBased = false, pp_dimensions, pp_open,
 		
 		// prettyPhoto container specific
-		pp_contentHeight, pp_contentWidth, pp_containerHeight, pp_containerWidth,
+		pp_contentHeight, pp_contentWidth, pp_containerHeight, pp_containerWidth, pp_topHeightExtra,
 		
 		// Window size
 		windowHeight = $(window).height(), windowWidth = $(window).width(),
@@ -140,7 +139,8 @@
 			
 			settings = pp_settings;
 			
-			if(settings.theme == 'pp_default') settings.horizontal_padding = 16;
+			if(settings.theme == 'pp_default')
+                settings.horizontal_padding = 13;
 			
 			// Find out if the picture is part of a set
 			theRel = $(this).attr(settings.hook);
@@ -202,7 +202,7 @@
 			}
 			
 			// Fade the content in
-			if($ppt.is(':hidden')) $ppt.css('opacity',0).show();
+			//if($ppt.is(':hidden')) $ppt.css('opacity',0).show();
 			$pp_overlay.show().fadeTo(settings.animation_speed,settings.opacity);
 
 			// Display the current position
@@ -227,7 +227,7 @@
 			// Fade the holder
 			$pp_pic_holder.fadeIn(function(){
 				// Set the title
-				(settings.show_title && pp_titles[set_position] != "" && typeof pp_titles[set_position] != "undefined") ? $ppt.html(unescape(pp_titles[set_position])) : $ppt.html('&nbsp;');
+				// (settings.show_title && pp_titles[set_position] != "" && typeof pp_titles[set_position] != "undefined") ? $ppt.html(unescape(pp_titles[set_position])) : $ppt.html('&nbsp;');
 				
 				imgPreloader = "";
 				skipInjection = false;
@@ -493,9 +493,10 @@
 
 			// Calculate the opened top position of the pic holder
 			projectedTop = scroll_pos['scrollTop'] + ((windowHeight/2) - (pp_dimensions['containerHeight']/2));
-			if(projectedTop < 0) projectedTop = 0;
+			if(projectedTop < 0)
+                projectedTop = 0;
 
-			$ppt.fadeTo(settings.animation_speed,1);
+			//$ppt.fadeTo(settings.animation_speed,1);
 
 			// Resize the content holder
 			$pp_pic_holder.find('.pp_content')
@@ -525,7 +526,8 @@
 					}
 				}
 				
-				if(settings.autoplay_slideshow && !pp_slideshow && !pp_open) $.prettyPhoto.startSlideshow();
+				if(settings.autoplay_slideshow && !pp_slideshow && !pp_open)
+                    $.prettyPhoto.startSlideshow();
 				
 				settings.changepicturecallback(); // Callback!
 				
@@ -569,9 +571,11 @@
 			_getDimensions(width,height);
 			
 			// Define them in case there's no resize needed
-			imageWidth = width, imageHeight = height;
+			var imageWidth = width;
+            var imageHeight = height;
 
 			if( ((pp_containerWidth > windowWidth) || (pp_containerHeight > windowHeight)) && doresize && settings.allow_resize && !percentBased) {
+                /*
 				resized = true, fitting = false;
 			
 				while (!fitting){
@@ -588,13 +592,33 @@
 					pp_containerHeight = imageHeight, pp_containerWidth = imageWidth;
 				};
 			
-
-				
 				if((pp_containerWidth > windowWidth) || (pp_containerHeight > windowHeight)){
 					_fitToViewport(pp_containerWidth,pp_containerHeight)
 				};
-				
-				_getDimensions(imageWidth,imageHeight);
+				*/
+
+                var resized = true;
+
+                if (pp_containerWidth > windowWidth)
+                    pp_containerWidth = windowWidth - settings.horizontal_padding * 2;
+                if (pp_containerHeight > windowHeight)
+                    pp_containerHeight = windowHeight - pp_topHeightExtra - settings.horizontal_padding * 2;
+
+                var stageRatio = pp_containerHeight / pp_containerWidth;
+                var imageRatio = imageHeight / imageWidth;
+
+                if (stageRatio >= imageRatio)
+                {
+                    imageWidth  = pp_containerWidth;
+                    imageHeight = (imageWidth/ width) * imageHeight;
+                }
+                else
+                {
+                    imageHeight = pp_containerHeight;
+                    imageWidth  = (imageHeight / height) * imageWidth;
+                }
+
+				_getDimensions(imageWidth, imageHeight);
 			};
 			
 			return {
@@ -629,7 +653,8 @@
 			detailsHeight += $pp_details.height();
 			detailsHeight = (detailsHeight <= 34) ? 36 : detailsHeight; // Min-height for the details
 			$pp_details.remove();
-			
+
+            /*
 			// Get the titles height, to do so, I need to clone it since it's invisible
 			$pp_title = $pp_pic_holder.find('.ppt');
 			$pp_title.width(width);
@@ -640,10 +665,12 @@
 			});
 			titleHeight += $pp_title.height();
 			$pp_title.remove();
-			
+			*/
+            titleHeight = 0;
 			// Get the container size, to resize the holder to the right dimensions
 			pp_contentHeight = height + detailsHeight;
 			pp_contentWidth = width;
+            pp_topHeightExtra = detailsHeight + $pp_pic_holder.find('.pp_top').height() + $pp_pic_holder.find('.pp_bottom').height();
 			pp_containerHeight = pp_contentHeight + titleHeight + $pp_pic_holder.find('.pp_top').height() + $pp_pic_holder.find('.pp_bottom').height();
 			pp_containerWidth = width;
 		}
