@@ -92,6 +92,17 @@ If you need to show a gallery of your 360 views via a popup, add multiple wr360p
 
 [wr360popup name="yourviewname2" gallery="true" width="400" height="400" config="/360_assets/sampleshoe3/config.xml"]your thumbnail image or text[/wr360popup]
 
+== Changelog ==
+ 
+= 2.5 =
+* Introduced plugin settings page with various settings:
+* Added dropdown to select default 360 product viewer skins.
+* Added dropdown to select default prettyPhoto / popup skin.
+* Added defaults for viewer dimensions, master config, basewidth.
+* Added new shortcode parameter to allow disabling browser optimization when using PNG images with opacity.
+* Synced with the latest WebRotate 360 Product Viewer v3.5 scripts and graphics.
+* Fixed prettyPhoto margin calculation to show nicely on small device screens.
+* Please note that if you are using PRO version, you will need to re-apply your license.lic after plugin upgraid. You can just copy it under the root of the plugin folder or specify its new location using the new plugin settings page.
 
 == Uninstall ==
 
