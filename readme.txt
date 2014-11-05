@@ -109,7 +109,7 @@ If you need to show a gallery of your 360 views via a popup, add multiple wr360p
 == Upgrade Notice ==
 
 = 2.5 =
-If using PRO, please re-apply your license.lic as it will be removed on upgrade. Please also copy imagerotator.js from any of your published SpotEditor PRO v3.5 projects located under published/imagerotator/html/js to wp-content/plugins/webrotate-360-product-viewer/imagerotator/html/js. 
+If using PRO, please re-apply your license.lic as it's removed on upgrade. Please also copy imagerotator.js from any of your published SpotEditor PRO v3.5 projects located under published/imagerotator/html/js to wp-content/plugins/webrotate-360-product-viewer/imagerotator/html/js. 
 
 == Uninstall ==
 
