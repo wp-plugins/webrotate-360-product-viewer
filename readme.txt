@@ -64,30 +64,33 @@ To follow our news, articles, beta releases and more, consider the following opt
 * <a href="https://plus.google.com/+Webrotate360">Google+</a>
 * <a href="https://twitter.com/webrotate360">Twitter</a>
 * <a href="http://www.webrotate360.com/blog/">Blog</a>
-* <a href="http://www.photogear360.com/blog/">Equipment Blog</a>
+* <a href="http://www.photogear360.com/blog/">360 Product Photography Blog</a>
 
 
 == Installation ==
 
-<h4>Installation instructions</h4>
-Please follow these simple steps to install the WordPress plugin on your server:
+<h4>Upload published 360 product views</h4>
 
-* Install WebRotate 360 Product Viewer for WordPress by either installing directly from your WordPress Admin area or download the module manually and copy unzipped webrotate360 folder into your wp-content/plugins.
-* Activate the module via the Plugins page in your WordPress Admin.
-* Upload your 360 views via ftp to your web server and note the location of an xml configuration file(s) in the uploaded folder(s) as you will need it for the shortcodes as shown below. Note that you only need to upload a single folder that is auto-created under 360_assets in the published folder of your SpotEditor project upon publish.
-* <strong>We also have supplied one test 360 product view that is located inside the plugin folder under 360_assets. To try this test view in your shortcode, you can use the following config path per the first shortcode example below:  <em>/wp-content/plugins/webrotate-360-product-viewer/360_assets/sampleshoe/config.xml</em></strong>
-* Simply add the following shortcode inside a post or page where you would like to see your 360 product view embedded, substituting name (no white spaces), width, height and config with your own values.
+Upload your 360 product views via FTP to your web server and note the location of an xml configuration file(s) in the uploaded folder(s) as you will need it for the shortcodes as shown below. Note that you only need to upload a single folder that is auto-created under 360_assets in the published folder of your SpotEditor project upon publish. <strong>There's one sample 360 product view located under the plugin folder under 360_assets. To try this sample, please use the following config path as per the shortcode examples below:  <em>/wp-content/plugins/webrotate-360-product-viewer/360_assets/sampleshoe/config.xml</em></strong>
+
+<h4>Embed inside a page or post</h4>
+
+Simply add the following shortcode inside a post or page where you would like to see your 360 product view embedded, replacing name, width, height and config with your own values.
 
 **Example 1:** [wr360embed name="yourviewname" width="100%" height="450px" config="/wp-content/plugins/webrotate-360-product-viewer/360_assets/sampleshoe/config.xml"]
 
-<i>You can also add an extra shortcode parameter called basewidth and specify the original width of your embedded 360 product viewer (i.e., basewidth="620px"). So when your primary shortcode width parameter is relative (i.e 100% as in the example above), the basewidth setting will force the 360 product viewer to scale its height relative to your original viewer width (basewidth). If the basewidth parameter is not set, the viewer height is not scaled when it's embedded in a responsive layout environment.</i>
+You can also add an extra shortcode parameter called basewidth to specify the original width of your embedded 360 product viewer (i.e., basewidth="620px"). So when your primary shortcode width parameter is relative (i.e 100% as in the example above), the basewidth setting will force the 360 product viewer to scale its height relative to your original viewer width (basewidth). If the basewidth parameter is not set, the viewer height is not scaled when it's embedded in a responsive layout environment.
+
+**Example 2:** [wr360embed name="yourviewname" width="100%" height="450px" basewidth="620px" config="/wp-content/plugins/webrotate-360-product-viewer/360_assets/sampleshoe/config.xml"]
+
+Alternatively, you can specify default viewer dimensions on the plugin settings page where you can configure other default options such as viewer or popup skins. If default dimensions are specified in the plugin settings, you don't need to repeat them again in your shortcodes.
 
 <h4>Integrate via popup</h4>
-Use the following shortcode to integrate via lightbox popup (replace name, width, height and config with your own values accordingly). Please note that the sample config path below indicates that the 360 product view was uploaded under the 360_assets folder located in the root of your WordPress website  (i.e on the same level with wp-content) that you would need to create there first:
+Use the following shortcode to integrate via lightbox popup (replace name, width, height and config with your own values accordingly). Please note that the sample config path below indicates that the 360 product view was uploaded under the 360_assets folder located in the root of your WordPress website (i.e on the same level with wp-content) that you would need to create there first:
 
-**Example 2:** [wr360popup name="yourviewname" width="620" height="450" config="/360_assets/sampleshoe2/config.xml"]your thumbnail image or text[/wr360popup]
+**Example 3:** [wr360popup name="yourviewname" width="620" height="450" config="/360_assets/sampleshoe2/config.xml"]your thumbnail image or text[/wr360popup]
 
-<h4>Popup gallery</h4>
+<h4>Integrate via popup gallery</h4>
 If you need to show a gallery of your 360 views via a popup, add multiple wr360popup shortcodes for each of your 360 views with an extra parameter called gallery:
 
 [wr360popup name="yourviewname1" gallery="true" width="620" height="450" config="/360_assets/sampleshoe2/config.xml"]your thumbnail image or text[/wr360popup]
@@ -104,12 +107,12 @@ If you need to show a gallery of your 360 views via a popup, add multiple wr360p
 * Updated to the latest version of WebRotate 360 Product Viewer v3.5 (scripts and graphics).
 * Fixed prettyPhoto margin calculation to show nicely on small device screens.
 * Added new shortcode parameter to allow disabling browser optimization when using PNG images with opacity (imageopacity="true").
-* PLEASE NOTE: if you are using PRO version, you may need to re-apply your license.lic as it will be removed by WordPress upon upgrade. Simply copy it under the root of the webrotate plugin folder or specify its new location on your server using the new plugin settings page (this way it will not happen next time you upgrade the plugin). If you are using the full-screen feature that comes with the PRO license, you may need to request commercial version of imagerotator.js or use the one from any of your published SpotEditor PRO v3.5 projects located under published/imagerotator/html/js and copy it to wp-content/plugins/webrotate-360-product-viewer/imagerotator/html/js. 
+* PLEASE NOTE: if using PRO, you may need to re-apply your license.lic as it's removed by WordPress upon upgrade. Simply copy it under the root of the webrotate plugin folder or specify its new location on your server using the new plugin settings page (this way it will not happen next time you upgrade the plugin). You may also need to request the commercial version of imagerotator.js or use the one from any of your published SpotEditor PRO v3.5 projects located under published/imagerotator/html/js and copy it to wp-content/plugins/webrotate-360-product-viewer/imagerotator/html/js. 
 
 == Upgrade Notice ==
 
 = 2.5 =
-If using PRO, please re-apply your license.lic as it's removed on upgrade. Please also copy imagerotator.js from any of your published SpotEditor PRO v3.5 projects located under published/imagerotator/html/js to wp-content/plugins/webrotate-360-product-viewer/imagerotator/html/js. 
+Introduced plugin settings with various defaults. If using PRO, please review upgrade details under <a href="https://wordpress.org/plugins/webrotate-360-product-viewer/changelog/">Changelog</a> as additional steps may be required.
 
 == Uninstall ==
 
