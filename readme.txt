@@ -1,7 +1,9 @@
 === 360 Product Viewer ===
-Contributors: sergey z., mahor
+Contributors: webrotate360
 Donate link: http://www.webrotate360.com/360-product-viewer.html
-Tags: 360 viewer, 360 product viewer, 360 views, 360 product views, image zoom, 3D viewer, pano viewer, product zoom, 360 degree panorama, 360 product spin,  html5, QTVR, 360 product photography, virtual tour, 360 degree photo, 3D view, product rotation, 360 image spin, 360 spin, spin 360, webrotate
+Tags: 360 viewer, 360 product viewer, 360 views, 360 product views, image zoom, 3D viewer, pano viewer, product zoom, 360 degree panorama, 360 product spin,  html5, QTVR, 360 product photography, virtual tour, 360 degree photo, 3D view, product rotation, 360 image spin, 360 spin, spin 360, webrotate, shortcode, images, popup, gallery
+Author URI: http://www.webrotate360.com/360-product-viewer.html
+Author: WebRotate 360 LLC
 Requires at least: 3.0.0
 Tested up to: 4.0.0
 Stable tag: 2.5
@@ -103,6 +105,11 @@ If you need to show a gallery of your 360 views via a popup, add multiple wr360p
 * Fixed prettyPhoto margin calculation to show nicely on small device screens.
 * Added new shortcode parameter to allow disabling browser optimization when using PNG images with opacity (imageopacity="true").
 * PLEASE NOTE: if you are using PRO version, you may need to re-apply your license.lic as it will be removed by WordPress upon upgrade. Simply copy it under the root of the webrotate plugin folder or specify its new location on your server using the new plugin settings page (this way it will not happen next time you upgrade the plugin). If you are using the full-screen feature that comes with the PRO license, you may need to request commercial version of imagerotator.js or use the one from any of your published SpotEditor PRO v3.5 projects located under published/imagerotator/html/js and copy it to wp-content/plugins/webrotate-360-product-viewer/imagerotator/html/js. 
+
+== Upgrade Notice ==
+
+= 2.5 =
+If using PRO, please re-apply your license.lic as it will be removed on upgrade. Please also copy imagerotator.js from any of your published SpotEditor PRO v3.5 projects located under published/imagerotator/html/js to wp-content/plugins/webrotate-360-product-viewer/imagerotator/html/js. 
 
 == Uninstall ==
 
