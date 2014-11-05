@@ -95,14 +95,14 @@ If you need to show a gallery of your 360 views via a popup, add multiple wr360p
 == Changelog ==
  
 = 2.5 =
-* Introduced plugin settings page with various settings, including:
-* Drop-down to select default 360 product viewer skin.
-* Drop-down to select default prettyPhoto / popup skin.
-* Defaults for viewer dimensions, basewidth, Master Config.
-* Synced with the latest WebRotate 360 Product Viewer v3.5 scripts and graphics.
+* Introduced plugin settings page with various defaults, including:
+* Drop-down with 360 product viewer skins.
+* Drop-down with prettyPhoto / popup skins.
+* Defaults for viewer dimensions, basewidth, Master Config, etc.
+* Updated to the latest version of WebRotate 360 Product Viewer v3.5 (scripts and graphics).
 * Fixed prettyPhoto margin calculation to show nicely on small device screens.
 * Added new shortcode parameter to allow disabling browser optimization when using PNG images with opacity (imageopacity="true").
-* PLEASE NOTE: if you are using PRO version, you will need to re-apply your license.lic as it will be removed by WordPress upon upgrade. You can just copy it under the root of the webrotate plugin folder  or specify its new location on your server using the new plugin settings page. If you are using full-screen option that comes with PRO, you may need to request a PRO copy of imagerotator.js or use the one from any of your published SpotEditor PRO v3.5 projects (located under published/imagerotator/html/js) and copy it under wp-content/plugins/webrotate-360-product-viewer/imagerotator/html/js. 
+* PLEASE NOTE: if you are using PRO version, you may need to re-apply your license.lic as it will be removed by WordPress upon upgrade. Simply copy it under the root of the webrotate plugin folder or specify its new location on your server using the new plugin settings page (this way it will not happen next time you upgrade the plugin). If you are using the full-screen feature that comes with the PRO license, you may need to request commercial version of imagerotator.js or use the one from any of your published SpotEditor PRO v3.5 projects located under published/imagerotator/html/js and copy it to wp-content/plugins/webrotate-360-product-viewer/imagerotator/html/js. 
 
 == Uninstall ==
 
