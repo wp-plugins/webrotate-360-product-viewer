@@ -95,14 +95,14 @@ If you need to show a gallery of your 360 views via a popup, add multiple wr360p
 == Changelog ==
  
 = 2.5 =
-* Introduced plugin settings page with various settings:
-* Added dropdown to select default 360 product viewer skins.
-* Added dropdown to select default prettyPhoto / popup skin.
-* Added defaults for viewer dimensions, master config, basewidth.
-* Added new shortcode parameter to allow disabling browser optimization when using PNG images with opacity.
+* Introduced plugin settings page with various settings, including:
+* Drop-down to select default 360 product viewer skin.
+* Drop-down to select default prettyPhoto / popup skin.
+* Defaults for viewer dimensions, basewidth, Master Config.
+* Added new shortcode parameter to allow disabling browser optimization when using PNG images with opacity (imageopacity="true").
 * Synced with the latest WebRotate 360 Product Viewer v3.5 scripts and graphics.
 * Fixed prettyPhoto margin calculation to show nicely on small device screens.
-* Please note that if you are using PRO version, you will need to re-apply your license.lic after plugin upgraid. You can just copy it under the root of the plugin folder or specify its new location using the new plugin settings page.
+* Please note that if you are using PRO version, you will need to re-apply your license.lic as it will be removed by WordPress upon upgrade. You can just copy it under the root of the plugin folder again or specify its new location on your server using the new plugin settings page.
 
 == Uninstall ==
 
