@@ -71,7 +71,7 @@ To follow our news, articles, beta releases and more, consider the following opt
 
 <h4>Upload published 360 product views</h4>
 
-Upload your 360 product views via FTP to your server and note the location of an xml configuration file(s) in the uploaded folder(s) as you will need it for the shortcodes as shown below. Note that you only need to upload a single folder that is auto-created under 360_assets in the published folder of your SpotEditor project upon publish. <strong>There's also one sample 360 product view located under the plugin folder under 360_assets. To try this sample, please use the following config path as per the shortcode examples below:  <em>/wp-content/plugins/webrotate-360-product-viewer/360_assets/sampleshoe/config.xml</em></strong>
+Upload your 360 product views via FTP to your server and note the location of an xml configuration file(s) in the uploaded folder(s) as you will need it for the shortcodes as shown below. Note that you only need to upload a single folder that is auto-created under 360_assets in the published folder of your SpotEditor project upon publish. There's also one sample 360 product view located under the plugin folder under 360_assets. To try this sample, please use the following config path as per the shortcode examples below:  <strong><em>/wp-content/plugins/webrotate-360-product-viewer/360_assets/sampleshoe/config.xml</em></strong>
 
 <h4>Embed inside a page or post</h4>
 
@@ -94,36 +94,52 @@ Use the following shortcode to integrate via lightbox popup (replace name, width
 If you need to show a gallery of your 360 product views via a popup, just add multiple wr360popup shortcodes for each view with an extra parameter called gallery:
 
 **Example 4:**
-
 [wr360popup name="yourviewname1" gallery="true" width="620px" height="450px" config="/360_assets/sampleshoe2/config.xml"]your thumbnail image or text[/wr360popup]
 
 [wr360popup name="yourviewname2" gallery="true" width="400px" height="400px" config="/360_assets/sampleshoe3/config.xml"]your thumbnail image or text[/wr360popup]
 
 <h4>Load images from CDN and / or use master config (PRO)</h4>
 
-Both shortcodes support the rootpath parameter that can be used to specify an alternative location of your image assets as configured in the config xml. When it's set in the shortcode, the viewer will prepend rootpath to all image path specified in the viewer configuration xml. This is valuable when you need to store image assets on a dedicated file server or CDN. This may be also used to load a large number of your product views using just a single / master xml file that can be configured under plugins settings via Master Config (assuming the number of images and their file names are the same across all published views).
+Both shortcodes support the rootpath parameter that can be used to specify an alternative location of your image assets as configured in the config xml. When it's set in the shortcode, the viewer will prepend rootpath to all image path specified in the viewer configuration xml. This is valuable when you need to store image assets on a dedicated file server or CDN. 
 
-**Example 5:** [wr360embed name="yourviewname" width="620px" height="450px" rootpath="http://mycdn/360_assets/product1/" config="/360_assets/product1/config.xml"]
+**Example 5:** [wr360embed name="yourviewname" width="620px" height="450px" rootpath="http://mycdn.com/360_assets/product1/" config="/360_assets/product1/config.xml"]
 
+The rootpath parameter may be also used to load multiple shortcodes using just a single / master config xml that can be set under plugin settings via Master Config URL (assuming the number of images and their file names are the same across multiple shortcodes), in which case you don't need to specify the config parameter in each of your shortcodes that share the same master config settings.
 
+== Frequently Asked Questions ==
+
+=  I entered a shortcode as per your instructions, but I can only see the three loading bars and nothing happens =
+
+In most cases this happenes due to an invalid xml path in the config parameter of a shortcode. Please verify that the config path is correct. You can always just enter a full URL of the config xml file on your web server (http://www..) and verify that it's actually accessible online by pasting the same URL in your browser address bar. If the xml file can be successfully loaded in your browser, it will work inside the shortcodes. You may then remove the website name from the URL including http:// and leave the rest, but then please make sure you add "/" in the front of the remaining URL to have it as a relative path. Using a relative path is only important if your website can be accessed using both http://www.website and http://website (i.e without www.) and they don't resolve to the same URL. 
+
+= Image rotation in some browsers may become jerky or unresponsive. If hotspots are present, they move as if they are detached from images =
+
+This is usually caused by disabled image caching as per the HTTP headers received from your web server that force web browsers to not cache any images. Please find more details and a simple solution for Apache servers on our forum <a href="http://www.360-product-views.com/forum/viewtopic.php?f=3&t=273&p=471">here</a>. Note that JPG & PNG image caching is usually enabled by default by all major web hosting provides. Although it can be manually disabled during website development or may need extra configuration if using Amazon S3 for hosting your 360 product images.
+
+= I purchased the PRO license but my PRO features were not activated =
+
+For certain PRO features you may need to request the commercial version of imagerotator.js or use the one from any of your published SpotEditor PRO projects located under published/imagerotator/html/js and just copy it to wp-content/plugins/webrotate-360-product-viewer/imagerotator/html/js. Please also verify that your license.lic is either present in the root of the plugin folder or correct license path is configured in the plugin settings.
 
 == Changelog ==
  
 = 2.5 =
-* Introduced plugin settings page with various defaults, including:
-* Drop-down with 360 product viewer skins.
-* Drop-down with prettyPhoto / popup skins.
-* Defaults for viewer dimensions, basewidth, Master Config, etc.
-* Updated to the latest version of WebRotate 360 Product Viewer v3.5 (scripts and graphics).
-* Fixed prettyPhoto margin calculation to show nicely on small device screens.
-* Added new shortcode parameter to allow disabling browser optimization when using PNG images with opacity (imageopacity="true").
-* PLEASE NOTE: if using PRO, you may need to re-apply your license.lic as it's removed by WordPress upon upgrade. Simply copy it under the root of the webrotate plugin folder or specify its new location on your server using the new plugin settings page (this way it will not happen next time you upgrade the plugin). You may also need to request the commercial version of imagerotator.js or use the one from any of your published SpotEditor PRO v3.5 projects located under published/imagerotator/html/js and copy it to wp-content/plugins/webrotate-360-product-viewer/imagerotator/html/js. 
+* ADDED: new plugin settings page with various defaults.
+* ADDED: drop-down with 360 product viewer skins.
+* ADDED: drop-down with prettyPhoto / popup skins.
+* ADDED: defaults for viewer dimensions, basewidth, Master Config, etc.
+* ADDED: new shortcode parameter to allow disabling browser optimization when using PNG images with opacity (imageopacity="true").
+* ADDED: latest version of WebRotate 360 Product Viewer v3.5 scripts and graphics (free version).
+* FIXED: prettyPhoto margin calculations was reworked to show correctly on small device screens.
+* FIXED: shortcode width and height are now correctly parsed regardless of "px" being passed or not.
+* <strong>NOTE:</strong> if using PRO, you may need to re-apply your license.lic as it's removed by WordPress upon upgrade. Simply copy it under the root of the webrotate plugin folder or specify its new location on your server using the new plugin settings page (this way it will not happen next time you upgrade the plugin). You may also need to request the commercial version of imagerotator.js or use the one from any of your published SpotEditor PRO v3.5 projects located under published/imagerotator/html/js and copy it to wp-content/plugins/webrotate-360-product-viewer/imagerotator/html/js. 
+
+= 2.0 =
+* ADDED: ability to add multiple embedded 360 product spins on the same page or post.
+* ADDED: gallery mode to show multiple spins via a popup gallery (prettyPhoto).
+* ADDED: image loading from CDN or external file servers via rootpath parameter.
+* ADDED: support for responsive themes in wr360embed shorcodes when width is relative (e.g, 100%).
 
 == Upgrade Notice ==
 
 = 2.5 =
-Introduced plugin settings with various defaults. If using PRO, please review upgrade details under <a href="https://wordpress.org/plugins/webrotate-360-product-viewer/changelog/">Changelog</a> as additional steps may be required.
-
-== Uninstall ==
-
-Deactivate WebRotate 360 Product Viewer for WordPress via the plugins page in your WordPress Admin.
+Introduced plugin settings with various defaults. If using PRO, please review upgrade note under <a href="https://wordpress.org/plugins/webrotate-360-product-viewer/changelog/">Changelog</a> as additional steps may be required.
