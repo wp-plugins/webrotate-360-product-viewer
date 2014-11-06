@@ -25,13 +25,13 @@ This product was built by us from grounds up in-house in Pasadena, California wi
 * Fine-tuned for E-Commerce with real business in mind.
 * Designed by professional 360 product photography studio.
 * Unique publishing software with instant batch processing.
-* Host everything on your own servers - no recurring fees.
+* Host everything on your own servers.
 * Works on iOS, Android, browsers with & without HTML5.
 * Extensive hotspot support for advanced interactivity.
 * Highly customizable (features, skins, templates, API, etc.)
 * Lightweight and fast with quick integration.
 * No server side scripts required - all client based.
-* All configuration is done via a separate XML file.
+* All viewer configuration is done via a separate XML file.
 * Continuously tested on all major browsers and devices.
 
 
@@ -55,7 +55,7 @@ If you haven't created 360 product views with WebRotate 360 Product Viewer befor
 [youtube http://www.youtube.com/watch?v=W3uFpXy1ne4]
 
 <h4>Support</h4>
-Check out the Installation tab for specific WordPress installation instructions. For more information and your questions, please visit our <a href="http://www.360-product-views.com/forum/">product forum</a> or email us at support at webrotate360 dot com. <em>We would be happy to assist with your WordPress integration if you have any issues!</em>
+Check out the Installation tab for specific WordPress installation instructions. For more information and your questions, please visit our <a href="http://www.360-product-views.com/forum/">product forum</a> or email us at support at webrotate360 dot com. <em><strong>We would be happy to assist with your WordPress integration if you have any issues!</strong></em>
 
 <h4>Connect with us</h4>
 To follow our news, articles, beta releases and more, consider the following options:
@@ -108,15 +108,15 @@ The rootpath parameter may be also used to load multiple shortcodes using just a
 
 == Frequently Asked Questions ==
 
-=  I entered a shortcode as per your instructions, but I can only see the three loading bars and nothing happens =
+=  I entered a shortcode as per your instructions, but I can only see the three loading bars and nothing happens: =
 
 In most cases this happenes due to an invalid xml path in the config parameter of a shortcode. Please verify that the config path is correct. You can always just enter a full URL of the config xml file on your web server (http://www..) and verify that it's actually accessible online by pasting the same URL in your browser address bar. If the xml file can be successfully loaded in your browser, it will work inside the shortcodes. You may then remove the website name from the URL including http:// and leave the rest, but then please make sure you add "/" in the front of the remaining URL to have it as a relative path. Using a relative path is only important if your website can be accessed using both http://www.website and http://website (i.e without www.) and they don't resolve to the same URL. 
 
-= Image rotation in some browsers may become jerky or unresponsive. If hotspots are present, they move as if they are detached from images =
+= Image rotation in some browsers may become jerky or unresponsive. If hotspots are present, they move as if they are detached from images: =
 
 This is usually caused by disabled image caching as per the HTTP headers received from your web server that force web browsers to not cache any images. Please find more details and a simple solution for Apache servers on our forum <a href="http://www.360-product-views.com/forum/viewtopic.php?f=3&t=273&p=471">here</a>. Note that JPG & PNG image caching is usually enabled by default by all major web hosting provides. Although it can be manually disabled during website development or may need extra configuration if using Amazon S3 for hosting your 360 product images.
 
-= I purchased the PRO license but my PRO features were not activated =
+= I purchased the PRO license but my PRO features were not activated: =
 
 For certain PRO features you may need to request the commercial version of imagerotator.js or use the one from any of your published SpotEditor PRO projects located under published/imagerotator/html/js and just copy it to wp-content/plugins/webrotate-360-product-viewer/imagerotator/html/js. Please also verify that your license.lic is either present in the root of the plugin folder or correct license path is configured in the plugin settings.
 
@@ -130,8 +130,8 @@ For certain PRO features you may need to request the commercial version of image
 * ADDED: new shortcode parameter to allow disabling browser optimization when using PNG images with opacity (imageopacity="true").
 * ADDED: latest version of WebRotate 360 Product Viewer v3.5 scripts and graphics (free version).
 * FIXED: prettyPhoto margin calculations was reworked to show correctly on small device screens.
-* FIXED: shortcode width and height are now correctly parsed regardless of "px" being passed or not.
-* <strong>NOTE:</strong> if using PRO, you may need to re-apply your license.lic as it's removed by WordPress upon upgrade. Simply copy it under the root of the webrotate plugin folder or specify its new location on your server using the new plugin settings page (this way it will not happen next time you upgrade the plugin). You may also need to request the commercial version of imagerotator.js or use the one from any of your published SpotEditor PRO v3.5 projects located under published/imagerotator/html/js and copy it to wp-content/plugins/webrotate-360-product-viewer/imagerotator/html/js. 
+* FIXED: shortcode width and height are now correctly parsed whether "px" was supplied or not.
+* <strong>NOTE:</strong> if using PRO, you may need to re-apply your license.lic as it's removed by WordPress upon upgrade. Simply copy it under the root of the webrotate plugin folder or specify its new location on your server using the new plugin settings page (this way it will not happen next time you upgrade the plugin). You may also need to request the commercial version of imagerotator.js or use the one from any of your published SpotEditor PRO projects located under published/imagerotator/html/js and copy it to wp-content/plugins/webrotate-360-product-viewer/imagerotator/html/js. 
 
 = 2.0 =
 * ADDED: ability to add multiple embedded 360 product spins on the same page or post.
