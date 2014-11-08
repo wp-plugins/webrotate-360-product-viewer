@@ -16,7 +16,7 @@ Embed 360 product views and 360-degree panoramic views created with WebRotate 36
 
 WebRotate 360 Product Viewer for WordPress is a free plugin that can be used to integrate advanced 360 product views and 360-degree panoramic views created with WebRotate 360 Product Viewer. To see a demonstration of this plugin, please visit our demo page:
 
-<a href="http://www.360-product-views.com/wordpress/">DEMO</a><br>
+<a href="http://www.360-product-views.com/wordpressdemo4/">DEMO</a><br>
 
 
 <h4>Features</h4>
