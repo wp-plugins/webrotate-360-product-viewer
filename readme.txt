@@ -120,6 +120,16 @@ This is usually caused by disabled image caching as per the HTTP headers receive
 
 For certain PRO features you may need to request the commercial version of imagerotator.js or use the one from any of your published SpotEditor PRO projects located under published/imagerotator/html/js and just copy it to wp-content/plugins/webrotate-360-product-viewer/imagerotator/html/js. Please also verify that your license.lic is either present in the root of the plugin folder or correct license path is configured in the plugin settings.
 
+== Screenshots ==
+
+1. Embed 360 product views anywhere inside your post or page. Use multitude of settings to configure your 360 product spins, changes skins, dimensions, drag speed, inertia, etc.
+2. Integrate 360 product views to launch inside the prettyPhoto lightbox popup with a 360 view gallery support.
+3. Configure various defaults and skins on the dedicated plugin settings page.
+4. Download free software to create your 360 degree product views in couple of mouse clicks on Windows or Mac.
+5. Add interactive hotspots, watermarks, logos, etc.
+6. Use instant image filters to optimize your 360-degree images before upload.
+7. Apply instant non-destructive crop and resize and publish straight to your WordPress FTP.
+
 == Changelog ==
  
 = 2.5 =
