@@ -42,7 +42,16 @@
         {
             $this->init_header();
             $extract = shortcode_atts(
-                array("name" => "", "width" => "", "height" => "", "rootpath" => "", "config" => "", "basewidth" => "", "gallery" => "false", "imageopacity" => ""), $atts);
+                array(
+                    "name"         => "",
+                    "width"        => "",
+                    "height"       => "",
+                    "rootpath"     => "",
+                    "config"       => "",
+                    "basewidth"    => "",
+                    "gallery"      => "false",
+                    "imageopacity" => "",
+                    "viewerskin"   => ""), $atts);
 
             $this->viewerWidth  = str_ireplace("px", "", get_option("wr360_viewer_width"));
             $this->viewerHeight = str_ireplace("px", "", get_option("wr360_viewer_height"));
@@ -69,6 +78,8 @@
                 $this->config = $extract["config"];
             if (!empty($extract["imageopacity"]))
                 $this->zIndexLayers = ($extract["imageopacity"] !== "true");
+            if (!empty($extract["viewerskin"]))
+                $this->viewerSkin = $extract["viewerskin"];
 
             $this->name = preg_replace('/\s+/', '', $extract["name"]);
             $this->rootPath = $extract["rootpath"];
@@ -120,11 +131,11 @@
 
         if ($defConfig->isPopupGallery)
         {
-            $replace = "<a id='%s' href='%s?config=%s&amp;root=%s&amp;height=%s&amp;iframe=true&amp;width=%s&amp;height=%s' rel=prettyPhoto[iframe]>";
+            $replace = "<a id='%s' href='%s?config=%s&amp;root=%s&amp;height=%s&amp;iframe=true&amp;width=%s&amp;height=%s&amp;viewerskin=%s' rel=prettyPhoto[iframe]>";
         }
         else
         {
-            $replace = "<a id='%s' href='%s?config=%s&amp;root=%s&amp;height=%s&amp;iframe=true&amp;width=%s&amp;height=%s' rel=prettyPhoto>";
+            $replace = "<a id='%s' href='%s?config=%s&amp;root=%s&amp;height=%s&amp;iframe=true&amp;width=%s&amp;height=%s&amp;viewerskin=%s' rel=prettyPhoto>";
         }
 
         $replace .= $content;
@@ -138,7 +149,8 @@
             urlencode($defConfig->rootPath),
             $defConfig->viewerHeight,
             str_ireplace("%", "", $defConfig->viewerWidth),
-            $defConfig->viewerHeight
+            $defConfig->viewerHeight,
+            $defConfig->viewerSkin
         ));
     }
 

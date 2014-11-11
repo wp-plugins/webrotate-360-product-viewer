@@ -4,23 +4,29 @@ function wr360QueryGetParameterByName(name){
 }
 
 jQuery(document).ready(function(){
-    var configHeight = parseInt(wr360QueryGetParameterByName("height"));
-    var iframeHeight = configHeight;
+    var popup360Elm = jQuery("#wr360PlayerId20");
+    if (popup360Elm.length == 1)
+    {
+        var configHeight = parseInt(wr360QueryGetParameterByName("height"));
+        var iframeHeight = configHeight;
 
-    var iframeElm = jQuery("#wr360frame_id", window.parent.document);
-    if (iframeElm.length > 0)
-        iframeHeight = iframeElm.attr("height");
+        var iframeElm = jQuery("#wr360frame_id", window.parent.document);
+        if (iframeElm.length > 0)
+            iframeHeight = iframeElm.attr("height");
 
-    var realHeight = (iframeHeight < configHeight) ? iframeHeight : configHeight;
-    jQuery(".viewerbox").css("height", realHeight + "px");
+        var realHeight = (iframeHeight < configHeight) ? iframeHeight : configHeight;
+        jQuery(".viewerbox").css("height", realHeight + "px");
 
-    jQuery("#wr360PlayerId20").rotator({
-        licenseFileURL : window.parent.getWR360License(),
-        graphicsPath   : window.parent.getWR360GraphicsPath(),
-        configFileURL  : wr360QueryGetParameterByName("config"),
-        rootPath       : wr360QueryGetParameterByName("root")
-    });
-
-    if (typeof(jQuery.fn.prettyPhoto) !== "undefined")
-        jQuery("a[rel^='prettyPhoto']").prettyPhoto({animation_speed:0, deeplinking:false, theme:window.parent.getWR360PopupSkin()});
+        popup360Elm.rotator({
+            licenseFileURL : window.parent.getWR360License(),
+            graphicsPath   : window.parent.getWR360GraphicsPath(),
+            configFileURL  : wr360QueryGetParameterByName("config"),
+            rootPath       : wr360QueryGetParameterByName("root")
+        });
+    }
+    else
+    {
+        if (typeof(jQuery.fn.prettyPhoto) !== "undefined")
+            jQuery("a[rel^='prettyPhoto']").prettyPhoto({animation_speed:0, deeplinking:false, theme:window.parent.getWR360PopupSkin()});
+    }
 });
