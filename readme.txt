@@ -132,6 +132,9 @@ For certain PRO features you may need to request the commercial version of image
 
 == Changelog ==
  
+= 2.5.1 = 
+* FIXED: issue was fixed that could affect interactive sliders and other javascript functions on certain WP installations.
+
 = 2.5 =
 * ADDED: new plugin settings page with various defaults.
 * ADDED: drop-down with 360 product viewer skins.
@@ -150,6 +153,9 @@ For certain PRO features you may need to request the commercial version of image
 * ADDED: support for responsive themes in wr360embed shorcodes when width is relative (e.g, 100%).
 
 == Upgrade Notice ==
+
+= 2.5.1 =
+Please updated ASAP if you have v2.5 of the plugin already installed.
 
 = 2.5 =
 Introduced plugin settings with various defaults. If using PRO, please review upgrade note under <a href="https://wordpress.org/plugins/webrotate-360-product-viewer/changelog/">Changelog</a> as additional steps may be required.
