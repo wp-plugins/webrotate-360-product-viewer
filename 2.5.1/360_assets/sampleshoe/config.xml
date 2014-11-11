@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<config>
+  <settings>
+    <preloader image="images/Filename_34.jpg" />
+    <userInterface showZoomButtons="true" showToolTips="true" showHotspotsButton="true" showFullScreenButton="false" showTogglePlayButton="true" showArrows="true" toolbarAlign="center" toolbarBackColor="#FFFFFF" toolbarHoverColor="#808285" toolbarForeColor="#A7A9AE" toolbarBackAlpha="0.9" toolbarAlpha="1" flashEmbedFonts="true" progressLoopColor="#e8e8e8" progressNumColor="#949494" />
+    <control dragSpeed="0.13" maxZoom="200" maxZoomFullScreen="200" fullScreenStretch="100" doubleClickZooms="true" disableMouseControl="false" reverseScroll="false" hideHotspotsOnLoad="false"/>
+    <rotation firstImage="33" rotate="false" rotatePeriod="7" rotateDirection="-1" bounce="false" useInertia="true"/>
+  </settings>
+  <hotspots><hotspot id="spot1" absolutePosition="false" className="WebRotate360.ImageRotator.Html5HotspotPresenter" indicatorImage="spot_shape_demo.png" alpha="0.8">
+      <spotinfo>
+        <cdata><![CDATA[<div style="padding:0px 6px 15px 6px; margin:0; line-height:18px; background-color:#FAFAFA; color: #727272; width:216px; border:1px #eeeeee solid;font-family: verdana;font-size:12px" >
+<p style="font-size:12px;font-weight:bold;color:#468AC1;padding:5px 0 5px 8px;margin:0;border-bottom:1px solid #dddddd">NEW HTML CONTENT
+</p>
+<p style="padding:7px 0px 0 8px; margin:0">
+Edit these hot-spots as HTML markup in SpotEditor and use any design you need with:
+<span style="color:red">Colors,&nbsp;</span>
+<span><b>Fonts,</b>&nbsp;</span>
+<span style="font-size:13px; color:black">Sizes,</span>
+<span><em>bullets</em>, images, <a href="http://www.webrotate360.com" target="_parent">URLs</a>, etc!</span>
+</p>
+</div>]]></cdata>
+      </spotinfo>
+    </hotspot>
+    <hotspot id="spot2" absolutePosition="false" className="WebRotate360.ImageRotator.Html5HotspotPresenter" indicatorImage="spot_shape_demo.png" alpha="0.8">
+      <spotinfo src="images/spots/hotspot.png" url="http://www.twitter.com/webrotate360" urlTarget="_parent" />
+    </hotspot>
+    <hotspot id="spot3" absolutePosition="false" className="WebRotate360.ImageRotator.Html5HotspotPresenter" indicatorImage="spot_shape_demo.png" alpha="0.8">
+      <spotinfo txt="SIMPLE TEXT CONTENT&#xD;&#xA;&#xD;&#xA;* Use WebRotate 360 SpotEditor&#xD;&#xA;* Create a spot and add text&#xD;&#xA;* Set background color and font&#xD;&#xA;* Set rollover box width" txtWidth="200" txtBkColor="#FBFBFB" txtColor="#696A6B" fntHeight="12" />
+    </hotspot>
+  </hotspots>
+  <images highresWidth="1200" highresHeight="791">
+    <image src="images/Filename_01.jpg">
+      <hotspot source="spot1" offsetX="97" offsetY="150" />
+      <highres src="images/highres/Filename_01.jpg" />
+    </image>
+    <image src="images/Filename_02.jpg">
+      <hotspot source="spot2" offsetX="403" offsetY="168" />
+      <highres src="images/highres/Filename_02.jpg" />
+    </image>
+    <image src="images/Filename_03.jpg">
+      <hotspot source="spot2" offsetX="395" offsetY="176" />
+      <highres src="images/highres/Filename_03.jpg" />
+    </image>
+    <image src="images/Filename_04.jpg">
+      <hotspot source="spot2" offsetX="379" offsetY="184" />
+      <highres src="images/highres/Filename_04.jpg" />
+    </image>
+    <image src="images/Filename_05.jpg">
+      <hotspot source="spot2" offsetX="358" offsetY="191" />
+      <highres src="images/highres/Filename_05.jpg" />
+    </image>
+    <image src="images/Filename_06.jpg">
+      <hotspot source="spot2" offsetX="334" offsetY="196" />
+      <highres src="images/highres/Filename_06.jpg" />
+    </image>
+    <image src="images/Filename_07.jpg">
+      <hotspot source="spot2" offsetX="306" offsetY="201" />
+      <highres src="images/highres/Filename_07.jpg" />
+    </image>
+    <image src="images/Filename_08.jpg">
+      <hotspot source="spot2" offsetX="275" offsetY="206" />
+      <highres src="images/highres/Filename_08.jpg" />
+    </image>
+    <image src="images/Filename_09.jpg">
+      <hotspot source="spot2" offsetX="241" offsetY="207" />
+      <highres src="images/highres/Filename_09.jpg" />
+    </image>
+    <image src="images/Filename_10.jpg">
+      <hotspot source="spot2" offsetX="204" offsetY="206" />
+      <highres src="images/highres/Filename_10.jpg" />
+    </image>
+    <image src="images/Filename_11.jpg">
+      <hotspot source="spot2" offsetX="170" offsetY="204" />
+      <highres src="images/highres/Filename_11.jpg" />
+    </image>
+    <image src="images/Filename_12.jpg">
+      <hotspot source="spot2" offsetX="138" offsetY="199" />
+      <highres src="images/highres/Filename_12.jpg" />
+    </image>
+    <image src="images/Filename_13.jpg">
+      <hotspot source="spot2" offsetX="108" offsetY="194" />
+      <highres src="images/highres/Filename_13.jpg" />
+    </image>
+    <image src="images/Filename_14.jpg">
+      <hotspot source="spot2" offsetX="84" offsetY="188" />
+      <highres src="images/highres/Filename_14.jpg" />
+    </image>
+    <image src="images/Filename_15.jpg">
+      <hotspot source="spot2" offsetX="65" offsetY="181" />
+      <highres src="images/highres/Filename_15.jpg" />
+    </image>
+    <image src="images/Filename_16.jpg">
+      <hotspot source="spot2" offsetX="53" offsetY="173" />
+      <hotspot source="spot3" offsetX="78" offsetY="94" />
+      <highres src="images/highres/Filename_16.jpg" />
+    </image>
+    <image src="images/Filename_17.jpg">
+      <hotspot source="spot3" offsetX="69" offsetY="89" />
+      <highres src="images/highres/Filename_17.jpg" />
+    </image>
+    <image src="images/Filename_18.jpg">
+      <hotspot source="spot3" offsetX="62" offsetY="82" />
+      <highres src="images/highres/Filename_18.jpg" />
+    </image>
+    <image src="images/Filename_19.jpg">
+      <hotspot source="spot3" offsetX="62" offsetY="77" />
+      <highres src="images/highres/Filename_19.jpg" />
+    </image>
+    <image src="images/Filename_20.jpg">
+      <hotspot source="spot3" offsetX="67" offsetY="72" />
+      <highres src="images/highres/Filename_20.jpg" />
+    </image>
+    <image src="images/Filename_21.jpg">
+      <hotspot source="spot3" offsetX="77" offsetY="66" />
+      <highres src="images/highres/Filename_21.jpg" />
+    </image>
+    <image src="images/Filename_22.jpg">
+      <hotspot source="spot3" offsetX="93" offsetY="61" />
+      <highres src="images/highres/Filename_22.jpg" />
+    </image>
+    <image src="images/Filename_23.jpg">
+      <hotspot source="spot3" offsetX="107" offsetY="57" />
+      <highres src="images/highres/Filename_23.jpg" />
+    </image>
+    <image src="images/Filename_24.jpg">
+      <hotspot source="spot3" offsetX="129" offsetY="53" />
+      <highres src="images/highres/Filename_24.jpg" />
+    </image>
+    <image src="images/Filename_25.jpg">
+      <hotspot source="spot3" offsetX="150" offsetY="51" />
+      <highres src="images/highres/Filename_25.jpg" />
+    </image>
+    <image src="images/Filename_26.jpg">
+      <hotspot source="spot1" offsetX="313" offsetY="165" />
+      <hotspot source="spot3" offsetX="173" offsetY="49" />
+      <highres src="images/highres/Filename_26.jpg" />
+    </image>
+    <image src="images/Filename_27.jpg">
+      <hotspot source="spot1" offsetX="294" offsetY="169" />
+      <hotspot source="spot3" offsetX="199" offsetY="48" />
+      <highres src="images/highres/Filename_27.jpg" />
+    </image>
+    <image src="images/Filename_28.jpg">
+      <hotspot source="spot1" offsetX="271" offsetY="173" />
+      <hotspot source="spot3" offsetX="223" offsetY="48" />
+      <highres src="images/highres/Filename_28.jpg" />
+    </image>
+    <image src="images/Filename_29.jpg">
+      <hotspot source="spot1" offsetX="247" offsetY="175" />
+      <hotspot source="spot3" offsetX="248" offsetY="48" />
+      <highres src="images/highres/Filename_29.jpg" />
+    </image>
+    <image src="images/Filename_30.jpg">
+      <hotspot source="spot1" offsetX="222" offsetY="175" />
+      <hotspot source="spot3" offsetX="274" offsetY="49" />
+      <highres src="images/highres/Filename_30.jpg" />
+    </image>
+    <image src="images/Filename_31.jpg">
+      <hotspot source="spot1" offsetX="196" offsetY="174" />
+      <hotspot source="spot3" offsetX="298" offsetY="51" />
+      <highres src="images/highres/Filename_31.jpg" />
+    </image>
+    <image src="images/Filename_32.jpg">
+      <hotspot source="spot1" offsetX="172" offsetY="171" />
+      <hotspot source="spot3" offsetX="319" offsetY="54" />
+      <highres src="images/highres/Filename_32.jpg" />
+    </image>
+    <image src="images/Filename_33.jpg">
+      <hotspot source="spot1" offsetX="150" offsetY="168" />
+      <hotspot source="spot3" offsetX="339" offsetY="57" />
+      <highres src="images/highres/Filename_33.jpg" />
+    </image>
+    <image src="images/Filename_34.jpg">
+      <hotspot source="spot1" offsetX="132" offsetY="165" />
+      <hotspot source="spot3" offsetX="358" offsetY="62" />
+      <highres src="images/highres/Filename_34.jpg" />
+    </image>
+    <image src="images/Filename_35.jpg">
+      <hotspot source="spot1" offsetX="117" offsetY="160" />
+      <highres src="images/highres/Filename_35.jpg" />
+    </image>
+    <image src="images/Filename_36.jpg">
+      <hotspot source="spot1" offsetX="105" offsetY="155" />
+      <highres src="images/highres/Filename_36.jpg" />
+    </image>
+  </images>
+</config>
