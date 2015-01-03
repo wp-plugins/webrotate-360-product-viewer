@@ -5,7 +5,7 @@ Tags: 360 viewer, 360 product viewer, 360 views, 360 product views, image zoom, 
 Author URI: http://www.webrotate360.com/360-product-viewer.html
 Author: WebRotate 360 LLC
 Requires at least: 3.0.0
-Tested up to: 4.0.0
+Tested up to: 4.1.0
 Stable tag: 2.5.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
