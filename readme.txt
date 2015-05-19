@@ -134,7 +134,7 @@ For certain PRO features you may need to request the commercial version of image
 
 = 2.5.2 = 
 * FIXED: security issue reported by WP team in a third-party library. 
-* <strong>NOTE:</strong>Note that the entire contents of the plugin will be 
+* <strong>NOTE:</strong> entire contents of the plugin will be 
 removed upon automatic update, so if you have any 360 assets or a license file stored in webrotate's plugin folder, please backup the plugin folder first.
  
 = 2.5.1 = 
