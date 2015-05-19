@@ -82,7 +82,7 @@
                 <td>
                     <?php $checkedVal = get_option('wr360_transparent_png');?>
                     <?php $checkedFlg = ($checkedVal) ? 'checked="checked"' : '' ?>
-                    <input type="checkbox" name="wr360_transparent_png" <?php echo $checkedFlg; ?>"/>
+                    <input type="checkbox" name="wr360_transparent_png" <?php echo $checkedFlg; ?>/>
                     <p class="description">Check here if your 360 images have opacity to disable conflicting Firefox optimization. Note that JPG images are usually better suited for 360 views than PNG, etc.</p>
                 </td>
             </tr>

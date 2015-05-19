@@ -1,12 +1,12 @@
 === 360 Product Viewer ===
 Contributors: webrotate360
 Donate link: http://www.webrotate360.com/360-product-viewer.html
-Tags: 360 viewer, 360 product viewer, 360 views, 360 product views, image zoom, 3D viewer, pano viewer, product zoom, 360 degree panorama, 360 product spin,  html5, QTVR, 360 product photography, virtual tour, 360 degree photo, 3D view, product rotation, 360 image spin, 360 spin, spin 360, webrotate, shortcode, images, popup, gallery
+Tags: 360 viewer, 360 product viewer, 360 views, 360 product views, image zoom, 3D viewer, pano viewer, product zoom, 360 degree panorama, 360 product spin,  html5, QTVR, 360 product photography, virtual tour, 360 degree photo, 3D view, product rotation, 360 image spin, 360 spin, spin 360, webrotate, shortcode, images, popup, gallery, woocommerce
 Author URI: http://www.webrotate360.com/360-product-viewer.html
 Author: WebRotate 360 LLC
 Requires at least: 3.0.0
-Tested up to: 4.2.1
-Stable tag: 2.5.1
+Tested up to: 4.2.2
+Stable tag: 2.5.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -131,6 +131,9 @@ For certain PRO features you may need to request the commercial version of image
 7. Apply instant non-destructive crop and resize and publish straight to your WordPress FTP.
 
 == Changelog ==
+
+= 2.5.2 = 
+* FIXED: security issue reported by WP team in a third-party library.
  
 = 2.5.1 = 
 * FIXED: issue was fixed that could affect interactive sliders and other javascript functions on certain WP installations.
@@ -153,6 +156,10 @@ For certain PRO features you may need to request the commercial version of image
 * ADDED: support for responsive themes in wr360embed shorcodes when width is relative (e.g, 100%).
 
 == Upgrade Notice ==
+
+= 2.5.2 =
+Please update ASAP due to security issue in a third-party library reported by WordPress which was just fixed. Note that the entire contents of the plugin will be 
+removed upon automatic update, so if you have any 360 assets or license file stored in webrotate's plugin folder, please backup the plugin folder first.
 
 = 2.5.1 =
 Please update ASAP if you have v2.5 of the plugin already installed.
