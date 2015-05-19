@@ -26,7 +26,9 @@ jQuery(document).ready(function(){
     }
     else
     {
-        if (typeof(jQuery.fn.prettyPhoto) !== "undefined")
-            jQuery("a[rel^='prettyPhoto']").prettyPhoto({animation_speed:0, deeplinking:false, theme:window.parent.getWR360PopupSkin()});
+        if ((typeof(jQuery.fn.prettyPhoto) !== "undefined") && (typeof(getWR360PopupSkin) !== "undefined"))
+		{
+            jQuery("a[rel^='prettyPhoto']").prettyPhoto({animation_speed:0, deeplinking:false, theme:getWR360PopupSkin()});
+		}
     }
 });
