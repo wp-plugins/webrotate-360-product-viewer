@@ -160,8 +160,7 @@ removed upon automatic update, so if you have any 360 assets or a license file s
 == Upgrade Notice ==
 
 = 2.5.2 =
-Please update ASAP due to security issue in a third-party library reported by WordPress which was just fixed. Note that the entire contents of the plugin will be 
-removed upon automatic update, so if you have any 360 assets or license file stored in webrotate's plugin folder, please backup the plugin folder first.
+Please update ASAP due to security issue in a third-party library reported by WordPress which was just fixed. Note that the entire contents of the plugin will be removed upon automatic update, so if you have any 360 assets or license stored in webrotate's plugin folder, please backup first.
 
 = 2.5.1 =
 Please update ASAP if you have v2.5 of the plugin already installed.
