@@ -1,7 +1,7 @@
 === 360 Product Viewer ===
 Contributors: webrotate360
 Donate link: http://www.webrotate360.com/360-product-viewer.html
-Tags: 360 viewer, 360 product viewer, 360 views, 360 product views, image zoom, 3D viewer, pano viewer, product zoom, 360 degree panorama, 360 product spin,  html5, QTVR, 360 product photography, virtual tour, 360 degree photo, 3D view, product rotation, 360 image spin, 360 spin, spin 360, webrotate, shortcode, images, popup, gallery
+Tags: 3D viewer, 360 product viewer, 3D product view, woocommerce, 360 views, 360 product views, image zoom, 3D viewer, pano viewer, product zoom, 360 degree panorama, 360 product spin,  html5, QTVR, 360 product photography, virtual tour, 360 degree photo, 3D view, product rotation, 360 image spin, 360 spin, spin 360, webrotate, shortcode, images, popup, gallery
 Author URI: http://www.webrotate360.com/360-product-viewer.html
 Author: WebRotate 360 LLC
 Requires at least: 3.0.0
@@ -33,6 +33,11 @@ This product was built by us from grounds up in-house in Pasadena, California wi
 * No server side scripts required - all client based.
 * All viewer configuration is done via a separate XML file.
 * Continuously tested on all major browsers and devices.
+
+<h4>Beta v3.0</h4>
+New version of the plugin (still in beta) adds full 3D product views (multi-row), native WooCommerce integration, Google Analytics events, wr360expand shortcode and more. Learn more and download:
+
+<a href="http://www.360-product-views.com/wordpressdemo4/">DOWNLOAD BETA V3.0</a><br>
 
 
 <h4>Upgrade to PRO</h4>
