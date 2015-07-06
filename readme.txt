@@ -48,6 +48,7 @@ Support our work by <a href="http://www.webrotate360.com/360-product-viewer-buy.
 * Full-screen support.
 * Ability to load 360 product images from CDN (external server) or use a single master configuration for multiple 360 product views.
 * Multiple embed shortcodes on the same page or post (i.e, wr360embed).
+* Google Analytics events (via beta v3.0).
 * Unlimited hotspots.
 * Free support and core product upgrades.
 
