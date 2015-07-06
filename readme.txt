@@ -35,6 +35,12 @@ This product was built by us from grounds up in-house in Pasadena, California wi
 * Continuously tested on all major browsers and devices.
 
 
+<h4>Beta v3.0</h4>
+New version of the plugin (still in beta) adds full 3D product views (multi-row), native WooCommerce integration, Google Analytics events, wr360expand shortcode and more. Learn more and download:
+
+<a href="http://www.webrotate360.com/Blog/post/New-WordPress-Plugin-With-Full-3D-Product-Views-and-Native-WooCommerce-Integration.aspx">DOWNLOAD BETA V3.0</a><br>
+
+
 <h4>Upgrade to PRO</h4>
 Support our work by <a href="http://www.webrotate360.com/360-product-viewer-buy.html">going PRO</a> that adds the following features:
 
