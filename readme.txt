@@ -36,7 +36,7 @@ This product was built by us from grounds up in-house in Pasadena, California wi
 
 
 <h4>Beta v3.0</h4>
-New version of the plugin (still in beta) adds full 3D product views (multi-row), native WooCommerce integration, Google Analytics events, wr360expand shortcode and more. Learn more and download:
+New version of the plugin (still in beta) adds full 3D product views (multi-row), native WooCommerce integration, Google Analytics events, viewer API integration, wr360expand shortcode and more. Learn more and download:
 
 <a href="http://www.webrotate360.com/Blog/post/New-WordPress-Plugin-With-Full-3D-Product-Views-and-Native-WooCommerce-Integration.aspx">DOWNLOAD BETA V3.0</a><br>
 
