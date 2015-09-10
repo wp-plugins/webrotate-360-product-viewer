@@ -5,12 +5,12 @@ Tags: 3D viewer, 360 product viewer, 3D product view, woocommerce, 360 views, 36
 Author URI: http://www.webrotate360.com/360-product-viewer.html
 Author: WebRotate 360 LLC
 Requires at least: 3.0.0
-Tested up to: 4.2.2
+Tested up to: 4.3.0
 Stable tag: 2.5.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Embed 360 product views and 360-degree panoramic views created with WebRotate 360 Product Viewer in your WordPress posts and pages.
+Embed 360 and 3D product views created with WebRotate 360 Product Viewer in your WordPress posts and pages.
 
 == Description ==
 
@@ -49,6 +49,7 @@ Support our work by <a href="http://www.webrotate360.com/360-product-viewer-buy.
 * Ability to load 360 product images from CDN (external server) or use a single master configuration for multiple 360 product views.
 * Multiple embed shortcodes on the same page or post (i.e, wr360embed).
 * Google Analytics events (via beta v3.0).
+* API integration in embed shortcodes (via beta v3.0).
 * Unlimited hotspots.
 * Free support and core product upgrades.
 
