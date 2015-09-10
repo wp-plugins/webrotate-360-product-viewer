@@ -10,11 +10,11 @@ Stable tag: 2.5.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Embed 360 and 3D product views created with WebRotate 360 Product Viewer in your WordPress posts and pages.
+Embed 360 product photography and 3D product views created with WebRotate 360 Product Viewer in your WordPress posts and pages.
 
 == Description ==
 
-WebRotate 360 Product Viewer for WordPress is a free plugin that can be used to integrate advanced 360 product views and 360-degree panoramic views created with WebRotate 360 Product Viewer. To see a demonstration of this plugin, please visit our demo page:
+WebRotate 360 Product Viewer for WordPress is a free plugin that can be used to integrate advanced 3D product views and 360 product photography created with WebRotate 360 Product Viewer. To see a demonstration of this plugin, please visit our demo page:
 
 <a href="http://www.360-product-views.com/wordpressdemo4/">DEMO</a><br>
 
