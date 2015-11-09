@@ -5,7 +5,7 @@ Tags: 3D viewer, 360 product viewer, 3D product view, woocommerce, 360 views, 36
 Author URI: http://www.webrotate360.com/360-product-viewer.html
 Author: WebRotate 360 LLC
 Requires at least: 3.0.0
-Tested up to: 4.3.0
+Tested up to: 4.3.1
 Stable tag: 2.5.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -36,7 +36,7 @@ This product was built by us from grounds up in-house in Pasadena, California wi
 
 
 <h4>Beta v3.0</h4>
-New version of the plugin (still in beta) adds full 3D product views (multi-row), native WooCommerce integration, Google Analytics events, viewer API integration, wr360expand shortcode and more. Learn more and download:
+New version of the plugin (stable beta) adds full 3D product views (multi-row), native WooCommerce integration, Google Analytics events, viewer API integration, wr360expand shortcode and more. Learn more and download:
 
 <a href="http://www.webrotate360.com/Blog/post/New-WordPress-Plugin-With-Full-3D-Product-Views-and-Native-WooCommerce-Integration.aspx">DOWNLOAD BETA V3.0</a><br>
 
